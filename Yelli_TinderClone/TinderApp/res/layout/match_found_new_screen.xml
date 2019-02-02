@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/appBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_header_color" >
+
+        <ImageView
+            android:id="@+id/kabulLogo"
+            android:layout_width="717px"
+            android:layout_height="380px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="260px"
+            android:background="@drawable/kabul_logo" />
+
+        <TextView
+            android:id="@+id/matchNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kabulLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50px"
+            android:text="You and Amina have liked each other."
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/matchPhotoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/matchNameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px" >
+
+            <RelativeLayout
+                android:id="@+id/userImageFrame"
+                android:layout_width="320px"
+                android:layout_height="320px"
+                android:background="@drawable/match_found_pic_circle" >
+
+                <ImageView
+                    android:id="@+id/userImageView"
+                    android:layout_width="310px"
+                    android:layout_height="310px"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/friendImageFrame"
+                android:layout_width="320px"
+                android:layout_height="320px"
+                android:layout_marginLeft="70px"
+                android:layout_toRightOf="@+id/userImageFrame"
+                android:background="@drawable/match_found_pic_circle" >
+
+                <ImageView
+                    android:id="@+id/friendImageView"
+                    android:layout_width="310px"
+                    android:layout_height="310px"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sendMessageButton"
+            android:layout_width="900px"
+            android:layout_height="150px"
+            android:layout_below="@+id/matchPhotoLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:background="@drawable/send_message" />
+
+        <Button
+            android:id="@+id/continueBrowButton"
+            android:layout_width="900px"
+            android:layout_height="150px"
+            android:layout_below="@+id/sendMessageButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:background="@drawable/continue_borwsing" />
+    </RelativeLayout>
+
+</RelativeLayout>

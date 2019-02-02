@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+    
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/datelayout"
+        
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/chatedate"
+            />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/chateboxlayout"
+        >
+        
+
+       <!--  <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/userImageview"
+            android:src="@drawable/ic_launcher"
+            /> -->
+            <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/userImageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+         android:layout_alignParentLeft="true"
+       
+        
+        />
+            
+            
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/speech_bubble_green"
+        android:shadowColor="@color/textShadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:text="Medium Text"
+      android:layout_toRightOf="@+id/userImageview"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

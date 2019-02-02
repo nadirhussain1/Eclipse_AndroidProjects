@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/appBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/sentMessagesLayout"
+            android:layout_width="830px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_chat_bg"
+            android:paddingBottom="50px" >
+
+            <RelativeLayout
+                android:id="@+id/senderImageFrame"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="27px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/match_found_pic_circle" >
+
+                <ImageView
+                    android:id="@+id/senderImageView"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/sentTextView"
+                android:layout_width="680px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@+id/senderImageFrame"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/receivedMessagesLayout"
+            android:layout_width="830px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_chat_bg"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="50px" >
+
+            <RelativeLayout
+                android:id="@+id/receiverImageFrame"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="27px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/match_found_pic_circle" >
+
+                <ImageView
+                    android:id="@+id/receiverImageView"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/receivedTextView"
+                android:layout_width="680px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@+id/receiverImageFrame"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

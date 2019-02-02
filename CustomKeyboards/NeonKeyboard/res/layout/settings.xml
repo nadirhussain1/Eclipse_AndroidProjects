@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:id="@+id/ScalingWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/SettingsHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="125px"
+            android:layout_marginTop="15px" >
+
+            <TextView
+                android:id="@+id/SelectionDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Neon Keyboard"
+                android:textColor="#FF00F2"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TapBelowText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SelectionDesc"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Tap Below"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/headDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="10px"
+            android:layout_below="@+id/SettingsHeader"
+            android:background="#AFFFFFFF" />
+
+        <ScrollView
+            android:id="@+id/landScapeScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/headDivider"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/ScrollViewChild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/keyboardEnable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="125px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="15px"
+                    android:gravity="center_vertical"
+                    android:text="Step 1 - Enable Neon keyboard (Turn on)"
+                    android:textColor="#FF00F2"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/Separator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:layout_below="@+id/keyboardEnable"
+                     android:background="#AFFFFFFF" />
+
+                <RelativeLayout
+                    android:id="@+id/keyBoardSelection"
+                    android:layout_width="fill_parent"
+                    android:layout_height="125px"
+                    android:layout_below="@+id/keyboardEnable"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/menu_blue_selection_highlight" >
+
+                    <TextView
+                        android:id="@+id/SelectionHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="Step 2 - Select Neon Keyboard"
+                        android:textColor="#FF00F2"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SelectionDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/SelectionHead"
+                        android:layout_below="@+id/SelectionHead"
+                        android:layout_marginTop="5px"
+                        android:text="Switch between keyboards"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/firstSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:layout_below="@+id/keyBoardSelection"
+                     android:background="#AFFFFFFF" />
+
+                <RelativeLayout
+                    android:id="@+id/soundSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150px"
+                    android:layout_below="@+id/firstSeparator"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/menu_blue_selection_highlight" >
+
+                    <TextView
+                        android:id="@+id/SelectionHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="Sound feedback"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TapHereText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="25px"
+                        android:layout_marginRight="20px"
+                        android:text="On / Off"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SelectionDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/SelectionHead"
+                        android:layout_below="@+id/SelectionHead"
+                        android:layout_marginTop="5px"
+                        android:text="Tap here to adjust sound volume"
+                        android:textSize="16dp" />
+
+                    <CheckBox
+                        android:id="@+id/soundCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/secodSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:layout_below="@+id/soundSettings"
+                     android:background="#AFFFFFFF" />
+
+                <RelativeLayout
+                    android:id="@+id/VibrationSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="125px"
+                    android:layout_below="@+id/secodSeparator"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/menu_blue_selection_highlight" >
+
+                    <TextView
+                        android:id="@+id/SelectionHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="Vibration feedback"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SelectionDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/SelectionHead"
+                        android:layout_below="@+id/SelectionHead"
+                        android:layout_marginTop="5px"
+                        android:text="Vibration feedback when tapping key"
+                        android:textSize="16dp" />
+
+                    <CheckBox
+                        android:id="@+id/VibrationCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/thirdSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:layout_below="@+id/VibrationSettings"
+                     android:background="#AFFFFFFF" />
+
+                <RelativeLayout
+                    android:id="@+id/ArrowsSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="125px"
+                    android:layout_below="@+id/thirdSeparator"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/menu_blue_selection_highlight" >
+
+                    <TextView
+                        android:id="@+id/SelectionHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="Arrow keys"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SelectionDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/SelectionHead"
+                        android:layout_below="@+id/SelectionHead"
+                        android:layout_marginTop="5px"
+                        android:text="Show arrow keys"
+                        android:textSize="16dp" />
+
+                    <CheckBox
+                        android:id="@+id/ArrowsCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/fourthSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:layout_below="@+id/ArrowsSettings"
+                    android:background="#AFFFFFFF" />
+
+                <RelativeLayout
+                    android:id="@+id/TracekeyboardSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="125px"
+                    android:layout_below="@+id/fourthSeparator"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/menu_blue_selection_highlight"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/SelectionHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="Trace keyboard"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SelectionDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/SelectionHead"
+                        android:layout_below="@+id/SelectionHead"
+                        android:layout_marginTop="5px"
+                        android:text="Slide fingers over letters to enter text"
+                        android:textSize="15dp" />
+
+                    <CheckBox
+                        android:id="@+id/TraceCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/fifthSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="4px"
+                    android:layout_below="@+id/TracekeyboardSettings"
+                    android:background="#FFFFFFFF"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/moreCoolApps"
+                    android:layout_width="fill_parent"
+                    android:layout_height="125px"
+                    android:layout_below="@+id/fourthSeparator"
+                    android:layout_marginTop="15px"
+                    android:background="@drawable/menu_blue_selection_highlight" >
+
+                    <TextView
+                        android:id="@+id/SelectionHead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:text="More Cool Apps!"
+                        android:textColor="#FF00F2"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TapHereText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="50px"
+                        android:layout_toRightOf="@+id/SelectionHead"
+                        android:text="Tap Here"
+                        android:textColor="#FF00F2"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/endSeparator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3px"
+                    android:layout_below="@+id/moreCoolApps"
+                    android:background="#AFFFFFFF" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

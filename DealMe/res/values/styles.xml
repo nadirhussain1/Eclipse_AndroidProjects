@@ -1,0 +1,75 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MyTheme" parent="Theme.Sherlock.Light">
+        <item name="actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="actionBarStyle">@style/MyTheme.Widget.Styled.ActionBar</item>
+        <item name="android:actionBarStyle">@style/MyTheme.Widget.Styled.ActionBar</item>
+        <item name="android:spinnerDropDownItemStyle">@style/MyApp.Widget.Holo.DropDownItem</item>
+        <item name="spinnerDropDownItemStyle">@style/MyApp.Widget.Holo.DropDownItem</item>
+
+    </style>
+
+    <style name="MyTheme.Widget.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="background">@drawable/actionbar_background</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+
+    <style name="MyApp.Widget.Holo.DropDownItem" parent="Widget.Sherlock.Light.DropDownItem.Spinner">
+        <!-- This is the orange text color -->
+        <item name="android:background">@color/black</item>
+       <item name = "background">@color/black</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MyActionButtonStyle" parent="Widget.Sherlock.ActionButton">
+        <item name="android:minWidth">0dip</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    
+
+    <style name="MYTHEME.ActionBarStyle.DropDownStyle" parent="Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/whitebox</item>
+        <item name="background">@drawable/whitebox</item>
+    </style>
+    <!-- "Implementation" of VPI theme. We just set the text size and color. -->
+
+    <style name="Theme.Styled" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/actionbar_background</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:backgroundSplit">@drawable/page4_separator</item>
+        <item name="android:divider">@drawable/page4_separator</item>
+        <item name="divider">@drawable/page4_separator</item>
+        <item name="android:dividerPadding">5dp</item>
+    </style>
+
+</resources>

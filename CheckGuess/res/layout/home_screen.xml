@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80px" >
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:text="@string/app_name"
+                android:textColor="#AD0C04"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/topbarborder"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/appName"
+                android:background="#AD0C04"
+                android:tag="constantheight" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/firstGuideText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80px"
+            android:text="@string/main_screen_first_text"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/secondGuideText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstGuideText"
+            android:layout_below="@+id/firstGuideText"
+            android:layout_marginTop="40px"
+            android:text="@string/main_screen_second_text"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/playonOnePhoneButton"
+            android:layout_width="600px"
+            android:layout_height="130px"
+            android:layout_below="@+id/secondGuideText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:text="Play on one phone"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/playonOtherPhoneButton"
+            android:layout_width="600px"
+            android:layout_height="130px"
+            android:layout_below="@+id/playonOnePhoneButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70px"
+            android:text="Connect to other phones"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

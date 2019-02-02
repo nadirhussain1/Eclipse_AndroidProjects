@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="680px"
+        android:layout_height="400px"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/imagePickerTile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:text="Escolha a opção desejada:"
+            android:textColor="#1d2843"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/OpenGalleryButton"
+            android:layout_width="660px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagePickerTile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50px"
+            android:gravity="center"
+            android:text="Abrir Galeria"
+            android:textColor="#6199c9"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/launchCameraButton"
+            android:layout_width="660px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OpenGalleryButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="Tirar Foto"
+            android:textColor="#6199c9"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

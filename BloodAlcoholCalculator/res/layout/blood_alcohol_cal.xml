@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="85"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:id="@+id/llProfileView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/my_view_margin"
+            android:layout_weight="30"
+            android:background="@drawable/border_black"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:id="@+id/llprofileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="35" >
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/photo_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20" >
+
+                        <TextView
+                            android:id="@+id/txtProfileName"
+                            style="@style/font_28sp_gray_Normal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:textSize="@dimen/campaign_textfontsize22" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="80"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50" >
+
+                            <TextView
+                                android:id="@+id/fixTxtHeight"
+                                style="@android:style/TextAppearance.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="HEIGHT:  "
+                                android:textColor="#575757"
+                                android:textSize="@dimen/campaign_textfontsize10" />
+
+                            <TextView
+                                android:id="@+id/txtHeight"
+                                style="@android:style/TextAppearance.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#7F7F7F"
+                                android:textSize="@dimen/campaign_textfontsize10"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:weightSum="100" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50" >
+
+                                <TextView
+                                    android:id="@+id/fixTxtWeight"
+                                    style="@android:style/TextAppearance.Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="WEIGHT:  "
+                                    android:textColor="#575757"
+                                    android:textSize="@dimen/campaign_textfontsize10" />
+
+                                <TextView
+                                    android:id="@+id/txtWeight"
+                                    style="@android:style/TextAppearance.Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:minEms="5"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="@dimen/campaign_textfontsize10"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:layout_weight="50" >
+
+                                <TextView
+                                    android:id="@+id/fixTxtGender"
+                                    style="@android:style/TextAppearance.Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="GENDER:  "
+                                    android:textColor="#575757"
+                                    android:textSize="@dimen/campaign_textfontsize10" />
+
+                                <TextView
+                                    android:id="@+id/txtGender"
+                                    style="@android:style/TextAppearance.Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#7F7F7F"
+                                    android:textSize="@dimen/campaign_textfontsize10"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/my_view_margin"
+            android:layout_weight="20"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/fixTxtHaveHad"
+                        style="@style/font_16sp_blue_Normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="I HAVE HAD"
+                        android:textSize="@dimen/campaign_textfontsize16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="60"
+                        android:weightSum="100" >
+
+                        <LinearLayout
+                            android:id="@+id/llLevelLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/my_view_margin10"
+                            android:layout_weight="30"
+                            android:gravity="center|right" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/left_aerrow" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="40"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/txtLevel"
+                                style="@style/font_32sp_bluefoNumber_Normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:minEms="1"
+                                android:text="0"
+                                android:textSize="@dimen/campaign_textfontsize38" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llLevelRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/my_view_margin10"
+                            android:layout_weight="30"
+                            android:gravity="center|left" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/right_aerrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/fixTxtDrinks"
+                        style="@style/font_16sp_blue_Normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="DRINKS"
+                        android:textSize="@dimen/campaign_textfontsize16" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/fixTxtPast"
+                        style="@style/font_16sp_blue_Normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="IN THE PAST"
+                        android:textSize="@dimen/campaign_textfontsize16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:gravity="center"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:weightSum="100" >
+
+                        <LinearLayout
+                            android:id="@+id/llMinuteLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/my_view_margin10"
+                            android:layout_weight="30"
+                            android:gravity="center|right" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/left_aerrow" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="40"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/txtMinutes"
+                                style="@style/font_32sp_bluefoNumber_Normal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0px"
+                                android:background="@null"
+                                android:ellipsize="marquee"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:minEms="1"
+                                android:text="5"
+                                android:textSize="@dimen/campaign_textfontsize38" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llMinuteRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/my_view_margin10"
+                            android:layout_weight="30"
+                            android:gravity="center|left" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/right_aerrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/fixTxtMinutes"
+                        style="@style/font_16sp_blue_Normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="MINUTES"
+                        android:textSize="@dimen/campaign_textfontsize16" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#C0C0C0" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/my_view_margin"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/fixTxtLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Estimated Blood Alcohol Level is"
+                    android:textColor="#03A312"
+                    android:textSize="@dimen/campaign_textfontsize14"
+                    android:textStyle="bold" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/txtPercentile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0px"
+                    android:background="@null"
+                    android:text="0.000%"
+                    android:textColor="#03A312"
+                    android:textSize="@dimen/campaign_textfontsize36" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/my_view_margin"
+                android:layout_marginRight="@dimen/my_view_margin"
+                android:layout_weight="100" >
+
+                <TextView
+                    android:id="@+id/txtDiscription"
+                    style="@style/font_12sp_grayLongText_normal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="You should feel and appear normal."
+                    android:textSize="@dimen/campaign_textfontsize13" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:weightSum="100" >
+
+                <Button
+                    android:id="@+id/btnCallApps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/other_apps" >
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:background="@drawable/share_button" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAdwhirlView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        
+         >
+
+        <com.google.ads.AdView
+            android:id="@+id/adViewbanner"
+            android:layout_width="320dp"
+            android:layout_height="52dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="a1517731fe636b0" />
+    </LinearLayout>
+
+</LinearLayout>

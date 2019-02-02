@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/creditsLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/dealImage"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp" >
+
+                <ImageView
+                    android:id="@+id/iconImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/dealImage"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Amusement Park of Food - Breakfast for two"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#0e637b" />
+
+            <TextView
+                android:id="@+id/HowMuchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@+id/descriptionText"
+                android:layout_marginTop="10dp"
+                android:text="HOW MUCH"
+                android:textColor="#818181"
+                android:textSize="18dp" />
+
+            <View
+                android:id="@+id/separatorHowMuch"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/HowMuchText"
+                android:background="#B5B5B5" />
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/separatorHowMuch"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/priceLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/priceButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="45"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/priceSignButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/priceButton"
+                        android:layout_marginTop="5dp"
+                        android:layout_toLeftOf="@+id/priceButton"
+                        android:text="$" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#B5B5B5" />
+
+                <RelativeLayout
+                    android:id="@+id/discountLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/discountAmountText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="50.0"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/discountpercentText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/discountAmountText"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_toRightOf="@+id/discountAmountText"
+                        android:text="%" />
+
+                    <TextView
+                        android:id="@+id/offText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/discountpercentText"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_toRightOf="@+id/discountAmountText"
+                        android:text="OFF" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#B5B5B5" />
+
+                <RelativeLayout
+                    android:id="@+id/daysLeftLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/timeLeftButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="3"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/daysButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/timeLeftButton"
+                        android:text="DAYS" />
+
+                    <TextView
+                        android:id="@+id/leftButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/daysButton"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/timeLeftButton"
+                        android:text="LEFT" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/whereText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@+id/buttonLayout"
+                android:layout_marginTop="20dp"
+                android:text="WHERE"
+                android:textColor="#818181"
+                android:textSize="18dp" />
+
+            <View
+                android:id="@+id/separatorWhere"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/whereText"
+                android:background="#B5B5B5" />
+
+            <TextView
+                android:id="@+id/companyProvider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@+id/separatorWhere"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="The NonVerbal Group"
+                android:textColor="#0e637b"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/AddressFirstLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@+id/companyProvider"
+                android:layout_marginLeft="5dp"
+                android:text="548 west street"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/AddressSecondLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@+id/AddressFirstLine"
+                android:layout_marginLeft="5dp"
+                android:text="548 west street"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/mapIt"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/companyProvider"
+                android:background="@drawable/map_selector_bg" />
+
+            <TextView
+                android:id="@+id/when"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@+id/mapIt"
+                android:text="WHEN"
+                android:textColor="#818181"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/sepratorWhen"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/when"
+                android:background="#B5B5B5" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@+id/sepratorWhen"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="FRIDAY , October 19"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@id/date"
+                android:layout_marginLeft="5dp"
+                android:text="7:45"
+                android:textColor="#0e637b"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/calenderImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/date"
+                android:background="@drawable/calendar_background_selector" />
+
+            <TextView
+                android:id="@+id/Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@+id/calenderImg"
+                android:text="DETAILS"
+                android:textColor="#818181"
+                android:textSize="18dp" />
+
+            <View
+                android:id="@+id/sepratorPurchase"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/Details"
+                android:background="#B5B5B5" />
+
+            <TextView
+                android:id="@+id/DetailsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/descriptionText"
+                android:layout_below="@+id/Details"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="DETAILS"
+                android:textColor="#444444"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

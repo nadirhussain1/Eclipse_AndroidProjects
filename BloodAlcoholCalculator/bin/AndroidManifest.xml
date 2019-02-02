@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.humby.bloodalcohol"
+    android:versionCode="3"
+    android:versionName="1.11" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:debuggable="false"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".BACActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Sherlock.__Theme.DarkActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Start of Airpush Manifest declaration -->
+        <meta-data
+            android:name="com.xuYDkIKOY.wnkYACTat142054.APPID"
+            android:value="119864" />
+        <meta-data
+            android:name="com.xuYDkIKOY.wnkYACTat142054.APIKEY"
+            android:value="wnkYACTat142054*1364350460142054533" />
+        <meta-data
+            android:name="ADWHIRL_KEY"
+            android:value="40bb49ed5a4f4153a6ea39fe08503e16" />
+        <activity
+            android:name="com.xuYDkIKOY.wnkYACTat142054.OptinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.xuYDkIKOY.wnkYACTat142054.SmartWallActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask" />
+
+        <!-- End of Airpush Manifest declaration -->
+
+      
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+
+</manifest>

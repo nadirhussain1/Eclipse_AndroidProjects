@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <com.game.surface.GameView
+            android:id="@+id/gameView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/gameOverLayout"
+            android:layout_width="400px"
+            android:layout_height="330px"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:background="#00000000" >
+
+            <TextView
+                android:id="@+id/GameOverText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Game Over"
+                android:textColor="#FFA24A"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/scoreBoard"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_below="@+id/GameOverText"
+                android:layout_marginTop="30px"
+                android:background="#DEDB94" >
+
+                <TextView
+                    android:id="@+id/scoreTextTileView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30px"
+                    android:text="SCORE"
+                    android:textColor="#FF795A"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/scoreAmountView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/scoreTextTileView"
+                    android:layout_below="@+id/scoreTextTileView"
+                    android:layout_marginTop="5px"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bestTextTileView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/scoreTextTileView"
+                    android:layout_below="@+id/scoreAmountView"
+                    android:layout_marginTop="5px"
+                    android:text="BEST"
+                    android:textColor="#FF795A"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bestTextScoreView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/scoreTextTileView"
+                    android:layout_below="@+id/bestTextTileView"
+                    android:layout_marginTop="5px"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/PlayButton"
+                android:layout_width="300px"
+                android:layout_height="75px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buttons_background"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="PLAY AGAIN"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

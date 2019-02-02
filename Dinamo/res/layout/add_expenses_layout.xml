@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2843" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/mainHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120px" >
+
+            <View
+                android:id="@+id/backClickArea"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px" />
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="19px"
+                android:layout_height="33px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/back_arrow_white" />
+
+            <TextView
+                android:id="@+id/addExpenseHeadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/add_expenses_label"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/centralRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="820px"
+            android:layout_marginTop="120px"
+            android:background="#111A2F" >
+
+            <TextView
+                android:id="@+id/informExpenseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:text="@string/inform_expense_value_label"
+                android:textColor="#FFFFFF"
+                android:textSize="21dp" />
+
+            <RelativeLayout
+                android:id="@+id/valueInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:layout_below="@+id/informExpenseTextView"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/input_white_bg" >
+
+                <TextView
+                    android:id="@+id/ValorStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/value_label"
+                    android:textColor="#6199c9"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/valorEditText"
+                    android:layout_width="500px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:gravity="right|center_vertical"
+                    android:hint="R$ 00,00"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:paddingRight="30px"
+                    android:singleLine="true"
+                    android:textColor="#6199c9"
+                    android:textColorHint="#6199c9"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/categoriesInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="132px"
+                android:layout_below="@+id/valueInputLayout"
+                android:layout_marginLeft="18px"
+                android:layout_marginRight="18px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/combo_bg_selector" >
+
+                <TextView
+                    android:id="@+id/categoriesStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:text="@string/categoria_text_label"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/catgoriesValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="100px"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/DueDateInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="132px"
+                android:layout_alignTop="@+id/categoriesInputLayout"
+                android:layout_marginLeft="18px"
+                android:layout_marginRight="18px"
+                android:layout_marginTop="125px"
+                android:background="@drawable/combo_bg_selector" >
+
+                <TextView
+                    android:id="@+id/dueDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:text="@string/due_date_label"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/dueDateInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="100px"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/periodicityInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="132px"
+                android:layout_alignTop="@+id/DueDateInputLayout"
+                android:layout_marginLeft="18px"
+                android:layout_marginRight="18px"
+                android:layout_marginTop="125px"
+                android:background="@drawable/combo_bg_selector" >
+
+                <TextView
+                    android:id="@+id/periodicityStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40px"
+                    android:text="@string/periodicity_label"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/periodcityValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="100px"
+                    android:text="Mensal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addExpenseButton"
+            android:layout_width="match_parent"
+            android:layout_height="147px"
+            android:layout_marginLeft="18px"
+            android:layout_marginRight="18px"
+            android:layout_marginTop="967px"
+            android:background="@drawable/buy_event_red_bg_selector"
+            android:gravity="center"
+            android:text="@string/add_expenses_label"
+            android:textColor="#60000E"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

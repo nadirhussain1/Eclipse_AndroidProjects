@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2843" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/mainHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120px" >
+
+            <View
+                android:id="@+id/backClickArea"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px" />
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="19px"
+                android:layout_height="33px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/back_arrow_white" />
+
+            <TextView
+                android:id="@+id/addBuyEventHeadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/edit_buy_event_label"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="820px"
+            android:layout_marginTop="120px"
+            android:background="#111A2F"
+            android:isScrollContainer="false" >
+
+            <RelativeLayout
+                android:id="@+id/centralRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/valueInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="130px"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginRight="25px"
+                    android:layout_marginTop="50px"
+                    android:background="@drawable/input_white_bg" >
+
+                    <TextView
+                        android:id="@+id/ValorStaticTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:text="@string/value_label"
+                        android:textColor="#6199c9"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/valorEditText"
+                        android:layout_width="500px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:gravity="right|center_vertical"
+                        android:hint="R$ 00,00"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:paddingRight="30px"
+                        android:singleLine="true"
+                        android:textColor="#6199c9"
+                        android:textColorHint="#6199c9"
+                        android:textSize="30dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/paymentDayInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="132px"
+                    android:layout_below="@+id/valueInputLayout"
+                    android:layout_marginLeft="18px"
+                    android:layout_marginRight="18px"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/combo_bg_selector" >
+
+                    <TextView
+                        android:id="@+id/paymentDateStaticTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40px"
+                        android:text="@string/payment_date_label"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/paymentDateValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="100px"
+                        android:text="10/02/2013"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/paymentMethodInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="132px"
+                    android:layout_alignTop="@+id/paymentDayInputLayout"
+                    android:layout_marginLeft="18px"
+                    android:layout_marginRight="18px"
+                    android:layout_marginTop="125px"
+                    android:background="@drawable/combo_bg_selector" >
+
+                    <TextView
+                        android:id="@+id/paymentMethodStaticTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40px"
+                        android:text="@string/payment_method_label"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/paymentMethodValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="100px"
+                        android:text="Dinheiro"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/establishmentInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="132px"
+                    android:layout_alignTop="@+id/paymentMethodInputLayout"
+                    android:layout_marginLeft="18px"
+                    android:layout_marginRight="18px"
+                    android:layout_marginTop="125px"
+                    android:background="@drawable/combo_bg_selector" >
+
+                    <TextView
+                        android:id="@+id/establishStaticTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40px"
+                        android:text="@string/establishment_name_label"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/establishValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="100px"
+                        android:text="Nome"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/observationNotesEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="170px"
+                    android:layout_alignTop="@+id/establishmentInputLayout"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginRight="25px"
+                    android:layout_marginTop="140px"
+                    android:background="@drawable/input_white_bg"
+                    android:gravity="top"
+                    android:hint="@string/observation_notes_label"
+                    android:imeOptions="actionDone"
+                    android:maxLength="200"
+                    android:paddingLeft="20px"
+                    android:paddingTop="20px"
+                    android:textColor="#6199c9"
+                    android:textColorHint="#6199c9"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/editPhotoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="88px"
+                    android:layout_alignTop="@+id/observationNotesEditText"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="200px"
+                    android:background="@drawable/blue_border_transp_center_bg"
+                    android:gravity="center"
+                    android:text="@string/edit_photo_button_label"
+                    android:textColor="#6199c9"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/DeleteBuyEventButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="88px"
+                    android:layout_alignTop="@+id/editPhotoButton"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="118px"
+                    android:background="@drawable/blue_border_transp_center_bg"
+                    android:gravity="center"
+                    android:text="@string/delete_buy_button_label"
+                    android:textColor="#6199c9"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:layout_below="@+id/DeleteBuyEventButton" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/saveBuyEventButton"
+            android:layout_width="match_parent"
+            android:layout_height="147px"
+            android:layout_marginLeft="18px"
+            android:layout_marginRight="18px"
+            android:layout_marginTop="967px"
+            android:background="@drawable/dark_blue_button_selector"
+            android:gravity="center"
+            android:text="@string/save_button_label"
+            android:textColor="#6199c9"
+            android:textSize="27dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

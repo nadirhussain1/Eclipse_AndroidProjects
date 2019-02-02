@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/scalingBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/mutualImageView"
+            android:layout_width="match_parent"
+            android:layout_height="1050px"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:id="@+id/loadBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/mutualNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mutualImageView"
+            android:layout_marginTop="40px"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="#222222"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

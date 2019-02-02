@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#3F9D2F" >
+
+        <ImageView
+            android:id="@+id/playerPic"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/playername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@+id/playerPic"
+            android:text="inputname"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/admintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/playername"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10px"
+            android:text="Admin"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/waitReadyLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="10px" >
+
+            <ProgressBar
+                android:id="@+id/waitBar"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/readyWaitText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="70px"
+                android:text="Waiting"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/finalInputDiffLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="50px" >
+
+            <TextView
+                android:id="@+id/diffText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$123.0"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/inputText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$123.0"
+                android:layout_alignRight="@+id/diffText"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="200px"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

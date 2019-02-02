@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white"
+    >
+    
+<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+     >
+    <RelativeLayout
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_centerHorizontal="true"
+       android:id="@+id/interestImageviewlayout"
+        >
+<!-- <ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/circled_book_icon"
+    android:id="@+id/userIterestgalley"
+    
+    NetworkImageViewCircularImageView
+    /> -->
+     <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/userIterestgalley"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+         />
+</RelativeLayout>
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"  
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/interestImageviewlayout"
+    >
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="myintrecvcxvcxvcxvcxvcxvcxtname"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/black"
+    android:id="@+id/myintrestedname"
+    />
+      
+    </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

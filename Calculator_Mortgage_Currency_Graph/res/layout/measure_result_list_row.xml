@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84px" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="700px"
+        android:layout_height="84px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/light_currency_card" >
+
+        <TextView
+            android:id="@+id/resultTextTitle"
+            android:layout_width="420px"
+            android:layout_height="64px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="11px"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#2A2A2A"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/resultTextAmount"
+            android:layout_width="230px"
+            android:layout_height="64px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="11px"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textColor="#101010"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

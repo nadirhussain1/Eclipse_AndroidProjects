@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingRight="?android:attr/scrollbarSize" >
+
+     <TextView
+        android:id="@+id/list_item_entry_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set up alerts to be notified of any new sales that include any of the keywords you specify.\n\nHow would you like to be notified?"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal" />
+    
+    <CheckBox
+        android:id="@+id/checkbox_device_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Notification"
+        android:layout_marginLeft="10dp" />
+    
+    <CheckBox
+        android:id="@+id/checkbox_email_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Message"
+        android:layout_marginLeft="10dp" />
+
+</LinearLayout>

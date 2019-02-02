@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5" >
+
+    <RelativeLayout
+        android:id="@+id/appBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/blue_header_color" >
+
+            <View
+                android:id="@+id/appHeaderLogo"
+                android:layout_width="254px"
+                android:layout_height="71px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/yelli_header_logo" />
+
+            <Button
+                android:id="@+id/doneTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:text="Done"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/scrollChild"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px" >
+
+                <RelativeLayout
+                    android:id="@+id/profileImageLayout"
+                    android:layout_width="660px"
+                    android:layout_height="635px"
+                    android:layout_marginLeft="35px"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/profileAddImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/add_photo_circle" />
+
+                    <ImageView
+                        android:id="@+id/profileReplaceImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="30px"
+                        android:layout_marginRight="30px"
+                        android:background="@drawable/replace_photo_cirle" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/firstImageLayout"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/profileImageLayout"
+                    android:layout_marginRight="35px"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:id="@+id/firstImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/firstAddImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/add_photo_circle" />
+
+                    <ImageView
+                        android:id="@+id/firstReplaceImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginRight="15px"
+                        android:background="@drawable/replace_photo_cirle" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/secondImageLayout"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:layout_alignBottom="@+id/profileImageLayout"
+                    android:layout_alignRight="@+id/firstImageLayout"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:id="@+id/secondImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/secondAddImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/add_photo_circle" />
+
+                    <ImageView
+                        android:id="@+id/secondReplaceImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginRight="15px"
+                        android:background="@drawable/replace_photo_cirle" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/thirdImageLayout"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:layout_alignLeft="@+id/profileImageLayout"
+                    android:layout_below="@+id/profileImageLayout"
+                    android:layout_marginTop="40px"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:id="@+id/thirdImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/thirdAddImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/add_photo_circle" />
+
+                    <ImageView
+                        android:id="@+id/thirdReplaceImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginRight="15px"
+                        android:background="@drawable/replace_photo_cirle" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fourthImageLayout"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:layout_alignTop="@+id/thirdImageLayout"
+                    android:layout_marginLeft="50px"
+                    android:layout_toRightOf="@+id/thirdImageLayout"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:id="@+id/fourthImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/fourthAddImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/add_photo_circle" />
+
+                    <ImageView
+                        android:id="@+id/fourthReplaceImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginRight="15px"
+                        android:background="@drawable/replace_photo_cirle" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fifthImageLayout"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:layout_alignRight="@+id/firstImageLayout"
+                    android:layout_alignTop="@+id/thirdImageLayout"
+                    android:background="#FFFFFF" >
+
+                    <ImageView
+                        android:id="@+id/fifthImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/fifthAddImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/add_photo_circle" />
+
+                    <ImageView
+                        android:id="@+id/fifthReplaceImageView"
+                        android:layout_width="87px"
+                        android:layout_height="88px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="15px"
+                        android:layout_marginRight="15px"
+                        android:background="@drawable/replace_photo_cirle" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/aboutTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/thirdImageLayout"
+                    android:layout_below="@+id/thirdImageLayout"
+                    android:layout_marginTop="50px"
+                    android:text="About Abdullah"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/whiteBackView"
+                    android:layout_width="match_parent"
+                    android:layout_height="700px"
+                    android:layout_below="@+id/aboutTextView"
+                    android:layout_marginTop="20px"
+                    android:background="#FFFFFF" />
+
+                <EditText
+                    android:id="@+id/descripEditor"
+                    android:layout_width="1000px"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutTextView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:background="#00000000"
+                    android:hint="Enter description here"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

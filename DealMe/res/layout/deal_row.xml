@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/poweredByLayout"
+        android:layout_width="74dp"
+        android:layout_height="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/powered_by_yipit" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poweredByLayout"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/border" >
+
+        <RelativeLayout
+            android:id="@+id/dealImage"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp" >
+
+            <ImageView
+                android:id="@+id/iconImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:scaleType="centerInside" />
+
+            <ProgressBar
+                android:id="@+id/waitbar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/preview" >
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Living Social"
+                android:textColor="#DADADA" />
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10px"
+                android:text="35 minutes ago"
+                android:textColor="#A5BF32"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/dealImage"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Amusement Park of Food - Breakfast for two"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#0e637b" />
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptionText"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="#B5B5B5" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/addressText"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp" >
+
+            <RelativeLayout
+                android:id="@+id/priceLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/priceSignButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/priceButton"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/priceButton"
+                    android:background="#FFFFFF"
+                    android:text="$" />
+
+                <TextView
+                    android:id="@+id/priceButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#FFFFFF"
+                    android:text="45"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/dealImage"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#B5B5B5" />
+
+            <RelativeLayout
+                android:id="@+id/discountLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/discountpercentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/discountAmountText"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/discountAmountText"
+                    android:background="#FFFFFF"
+                    android:text="%" />
+
+                <TextView
+                    android:id="@+id/offText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/discountpercentText"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/discountAmountText"
+                    android:background="#FFFFFF"
+                    android:text="OFF"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/discountAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#FFFFFF"
+                    android:text="50.0"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/dealImage"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#B5B5B5" />
+
+            <RelativeLayout
+                android:id="@+id/daysLeftLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/timeLeftButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:text="3"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/daysButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/timeLeftButton"
+                    android:background="#FFFFFF"
+                    android:text="DAYS"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/leftButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/daysButton"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_toRightOf="@+id/timeLeftButton"
+                    android:background="#FFFFFF"
+                    android:text="LEFT"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/separatorImage"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/buttonLayout"
+            android:background="#B5B5B5" />
+    </RelativeLayout>
+
+</RelativeLayout>

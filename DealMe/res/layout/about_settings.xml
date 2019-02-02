@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/firstAboutLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Copyright 2013 by Humby Co."
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/websiteLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstAboutLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:autoLink="web"
+        android:text="www.humby.co"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/CheckAppsButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Check out our apps"
+        android:layout_below="@+id/websiteLink"
+        android:layout_marginTop="80dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+</RelativeLayout>

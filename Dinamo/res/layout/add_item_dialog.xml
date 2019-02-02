@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="680px"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/dialogTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:text="@string/new_establishment_label"
+            android:textColor="#1d2843"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/newNameEditor"
+            android:layout_width="560px"
+            android:layout_height="120px"
+            android:layout_below="@+id/dialogTitleTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:background="#00000000"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:paddingLeft="20px"
+            android:singleLine="true"
+            android:textColor="#6199c9"
+            android:textColorHint="#6199c9"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/cancelButtonView"
+            android:layout_width="240px"
+            android:layout_height="100px"
+            android:layout_below="@+id/newNameEditor"
+            
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="@string/cancel_label"
+            android:textColor="#6199c9"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/addButtonOkView"
+            android:layout_width="240px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/newNameEditor"
+            
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="@string/add_label"
+            android:textColor="#6199c9"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

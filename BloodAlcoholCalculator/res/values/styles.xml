@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="Gallery1">
+		<attr name="android:galleryItemBackground"/>
+	</declare-styleable>
+	<style name="font_11sp_white_normal">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+	</style>
+    <style name="font_12sp_White_Normal">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="font_13sp_White_bold">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="font_13sp_White_Normal">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="font_14sp_White_Normal">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="font_14sp_White_bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="font_16sp_white_normal">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="font_12sp_black_Normal">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="font_12sp_grayHWG_bold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#575757</item>
+    </style>
+    <style name="font_12sp_grayLongText_normal">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#181818</item>
+    </style>
+    <style name="font_11sp_white_boldl">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF7F7F7F</item>
+    </style>
+    <style name="font_12sp_Gray_bold">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF7F7F7F</item>
+    </style>
+    <style name="font_14sp_black_Normal">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="font_16sp_black_Normal">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="font_16sp_blue_White">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="font_16sp_blue_Normal">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#3C75AD</item>
+    </style>
+    <style name="font_32sp_bluefoNumber_Normal">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#266AA4</item>
+    </style>
+    <style name="font_18sp_black_Normal">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="font_20sp_black_Normal">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="font_20sp_gray_Normal">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FFA4A4A4</item>
+    </style>
+   <style name="font_28sp_gray_Normal">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#FF575757</item>
+    </style>
+    <style name="font_16sp_Red_bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFdc8784</item>
+    </style>
+      <style name="font_18sp_Yellow_bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFf1d524</item>
+    </style>
+    <style name="font_18sp_brown_bold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF261c29</item>
+    </style>
+    <style name="font_18sp_white_bold">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="font_16sp_black_bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="font_14sp_black_bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="font_14sp_blue_bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#3397c4</item>
+    </style>
+    
+    <style name="font_14sp_profileGray_bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#9B9B9B</item>
+    </style>
+    
+    <style name="font_14sp_profileGray_normal">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#9B9B9B</item>
+    </style>
+    
+    <style name="font_16sp_blue_bold">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#3397c4</item>
+    </style>
+    <style name="font_18sp_blue_bold">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#3397c4</item>
+    </style>
+    <style name="font_14sp_gray_bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#605d5d</item>
+    </style>
+    <style name="font_14sp_gray_normal">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#605d5d</item>
+    </style>
+</resources>

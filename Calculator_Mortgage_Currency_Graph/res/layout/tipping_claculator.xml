@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/inputDisplayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/inputLabelLayout"
+            android:background="#000000" >
+
+            <EditText
+                android:id="@+id/TotalBillInputEditArea"
+                android:layout_width="358px"
+                android:layout_height="match_parent"
+                android:background="#2F2F2F"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#30C1FF"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/PeopleBillInputEditArea"
+                android:layout_width="178px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="360px"
+                android:background="#2F2F2F"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#30C1FF"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/TipInputEditArea"
+                android:layout_width="180px"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/PeopleBillInputEditArea"
+                android:layout_marginLeft="180px"
+                android:background="#2F2F2F"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#30C1FF"
+                android:textSize="40dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/inputLabelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_above="@+id/resultDisplayLayout"
+            android:background="#000000" >
+
+            <TextView
+                android:id="@+id/TotalBillInputLabel"
+                android:layout_width="358px"
+                android:layout_height="match_parent"
+                android:background="#1D1D1D"
+                android:gravity="center"
+                android:text="TOTAL BILL"
+                android:textColor="#616060"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PeopleBillInputLabel"
+                android:layout_width="178px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="360px"
+                android:background="#1D1D1D"
+                android:gravity="center"
+                android:text="PEOPLE"
+                android:textColor="#616060"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TipInputLabel"
+                android:layout_width="180px"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/PeopleBillInputLabel"
+                android:layout_marginLeft="180px"
+                android:background="#1D1D1D"
+                android:gravity="center"
+                android:text="TIP"
+                android:textColor="#616060"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/resultDisplayLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="480px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="395px"
+            android:background="#E4E4E4" >
+
+            <TextView
+                android:id="@+id/perPersonStaticText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="20px"
+                android:text="PER PERSON"
+                android:textColor="#808080"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/tipLayoutPerPerson"
+                android:layout_width="330px"
+                android:layout_height="75px"
+                android:layout_below="@+id/perPersonStaticText"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/light_currency_card" >
+
+                <TextView
+                    android:id="@+id/TipPerPersonStaticText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="TIP"
+                    android:textColor="#0B0B0B"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TipPerPersonAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25px"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#373737"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/taxLayoutPerPerson"
+                android:layout_width="330px"
+                android:layout_height="75px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/perPersonStaticText"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/light_currency_card" >
+
+                <TextView
+                    android:id="@+id/TaxPerPersonStaticText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="TAX"
+                    android:textColor="#0B0B0B"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TaxPerPersonAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25px"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#373737"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/totalLayoutPerPerson"
+                android:layout_width="690px"
+                android:layout_height="75px"
+                android:layout_below="@+id/tipLayoutPerPerson"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:background="@drawable/light_currency_card" >
+
+                <TextView
+                    android:id="@+id/TotalPerPersonStaticText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="TOTAL"
+                    android:textColor="#0B0B0B"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TotalPerPersonAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25px"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#373737"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/entireGroupStaticText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalLayoutPerPerson"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="20px"
+                android:text="ENTIRE GROUP"
+                android:textColor="#808080"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/tipLayoutGroup"
+                android:layout_width="330px"
+                android:layout_height="75px"
+                android:layout_below="@+id/entireGroupStaticText"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/light_currency_card" >
+
+                <TextView
+                    android:id="@+id/TipGroupStaticText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="TIP"
+                    android:textColor="#0B0B0B"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TipGroupAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25px"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#373737"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/taxLayoutGroup"
+                android:layout_width="330px"
+                android:layout_height="75px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/entireGroupStaticText"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/light_currency_card" >
+
+                <TextView
+                    android:id="@+id/TaxGroupStaticText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="TAX"
+                    android:textColor="#0B0B0B"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TaxGroupAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25px"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#373737"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/totalLayoutPerGroup"
+                android:layout_width="690px"
+                android:layout_height="75px"
+                android:layout_below="@+id/tipLayoutGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:background="@drawable/light_currency_card" >
+
+                <TextView
+                    android:id="@+id/TotalGroupStaticText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:gravity="center_vertical"
+                    android:text="TOTAL"
+                    android:textColor="#0B0B0B"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TotalGroupAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25px"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#373737"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/keyPadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="395px"
+            android:layout_alignParentBottom="true" >
+
+            <View
+                android:id="@+id/keyBoardTopLine"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#BFBFBF"
+                android:tag="constantHeight" />
+
+            <RelativeLayout
+                android:id="@+id/firstRow"
+                android:layout_width="match_parent"
+                android:layout_height="131px"
+                android:layout_marginTop="2px" >
+
+                <Button
+                    android:id="@+id/digitSevenButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_7" />
+
+                <Button
+                    android:id="@+id/digitEightButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitSevenButton"
+                    android:background="@drawable/light_button_8" />
+
+                <Button
+                    android:id="@+id/digitNineButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitEightButton"
+                    android:background="@drawable/light_button_9" />
+
+                <Button
+                    android:id="@+id/numPadClearButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitNineButton"
+                    android:background="@drawable/light_numpad_clear" />
+
+                <Button
+                    android:id="@+id/numPadBackSpaceButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/numPadClearButton"
+                    android:background="@drawable/light_numpad_backspace" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/secondRow"
+                android:layout_width="match_parent"
+                android:layout_height="131px"
+                android:layout_below="@+id/firstRow" >
+
+                <Button
+                    android:id="@+id/digitFourButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_4" />
+
+                <Button
+                    android:id="@+id/digitFiveButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitFourButton"
+                    android:background="@drawable/light_button_5" />
+
+                <Button
+                    android:id="@+id/digitSixButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitFiveButton"
+                    android:background="@drawable/light_button_6" />
+
+                <Button
+                    android:id="@+id/digitZeroButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitSixButton"
+                    android:background="@drawable/light_button_0" />
+
+                <Button
+                    android:id="@+id/digitDoubleZeroButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitZeroButton"
+                    android:background="@drawable/light_button_00" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/thirdRow"
+                android:layout_width="match_parent"
+                android:layout_height="131px"
+                android:layout_below="@+id/secondRow" >
+
+                <Button
+                    android:id="@+id/digitOneButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_1" />
+
+                <Button
+                    android:id="@+id/digitTwoButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitOneButton"
+                    android:background="@drawable/light_button_2" />
+
+                <Button
+                    android:id="@+id/digitThreeButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitTwoButton"
+                    android:background="@drawable/light_button_3" />
+
+                <Button
+                    android:id="@+id/digitDecimalButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitThreeButton"
+                    android:background="@drawable/light_button_decimal" />
+
+                <Button
+                    android:id="@+id/keyPadHideButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitDecimalButton"
+                    android:background="@drawable/light_numpad_hide" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scaleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" >
+
+        <RelativeLayout
+            android:id="@+id/modeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <Button
+                android:id="@+id/startNewGameButton"
+                android:layout_width="300px"
+                android:layout_height="75px"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buttons_background"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Start Game"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/ClassicModeButton"
+                android:layout_width="300px"
+                android:layout_height="75px"
+                android:layout_below="@+id/startNewGameButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20px"
+                android:background="@drawable/buttons_background"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Classic"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/StoryModeButton"
+                android:layout_width="300px"
+                android:layout_height="75px"
+                android:layout_below="@+id/ClassicModeButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20px"
+                android:background="@drawable/buttons_background"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Story"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

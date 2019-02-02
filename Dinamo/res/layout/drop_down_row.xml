@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="@drawable/dropdown_blue_selection_highlight" >
+
+        <TextView
+            android:id="@+id/dropdownRowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:text="CPF"
+            android:textColor="#1d2843"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

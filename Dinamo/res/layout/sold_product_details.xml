@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2843" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/mainHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120px" >
+
+            <View
+                android:id="@+id/backClickArea"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px" />
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="19px"
+                android:layout_height="33px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/back_arrow_white" />
+
+            <TextView
+                android:id="@+id/soldProductDetailsLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/details_sold_product_label"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/editIcon"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/edit_button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/soldValueLayout"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:layout_marginTop="120px"
+            android:background="#111A2F" >
+
+            <TextView
+                android:id="@+id/ValorStaticTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="VALOR:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/ValorValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:text="R$ 300,00"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/centralWhiteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="440px"
+            android:layout_alignTop="@+id/soldValueLayout"
+            android:layout_marginTop="280px"
+            android:background="#FFFFFF" >
+
+            <RelativeLayout
+                android:id="@+id/QuantityDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/quantityStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/quantity_label"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/quantityValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:text="1"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#66000000"
+                    android:tag="constantHeight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/productDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_alignTop="@+id/QuantityDetailLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110px" >
+
+                <TextView
+                    android:id="@+id/productStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/product_type_label"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/productValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:text="Espetinhos"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#66000000"
+                    android:tag="constantHeight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/receiptDateDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_alignTop="@+id/productDetailLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110px" >
+
+                <TextView
+                    android:id="@+id/receiptStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/receipt_date_label"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/receiptValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:text="01/01/2014"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#66000000"
+                    android:tag="constantHeight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/payMethodDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_alignTop="@+id/receiptDateDetailLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110px" >
+
+                <TextView
+                    android:id="@+id/payMethodStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/payment_method_label"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/payMethodValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:text="Dinheiro"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/appBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/flower_bg"
+            android:layout_width="616px"
+            android:layout_height="976px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/flow_bg" />
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/blue_header_color" >
+
+            <View
+                android:id="@+id/backButtonClickArea"
+                android:layout_width="115px"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/backButtonImageView"
+                android:layout_width="35px"
+                android:layout_height="62px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/white_back_arrow" />
+
+            <TextView
+                android:id="@+id/screenNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Messages"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/messagesListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerLayout" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

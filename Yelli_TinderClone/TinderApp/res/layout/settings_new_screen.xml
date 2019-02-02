@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/appBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/flower_bg"
+            android:layout_width="616px"
+            android:layout_height="976px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/flow_bg" />
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/blue_header_color" >
+
+            <View
+                android:id="@+id/backButtonClickArea"
+                android:layout_width="115px"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/backButtonImageView"
+                android:layout_width="35px"
+                android:layout_height="62px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/white_back_arrow" />
+
+            <TextView
+                android:id="@+id/screenNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Settings"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/searchDistanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:text="Search within 60 miles of current location"
+            android:textColor="#7A7A7A"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/distanceBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_below="@+id/searchDistanceTextView"
+            android:layout_marginTop="30px"
+            android:background="#F7F7F7" >
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25px"
+                android:text="0"
+                android:textColor="#D9D9D9"
+                android:textSize="18dp" />
+
+            <SeekBar
+                android:id="@+id/searchDistanceProgressBar"
+                android:layout_width="900px"
+                android:layout_height="100px"
+                android:layout_centerInParent="true"
+                android:max="100"
+                android:thumb="@drawable/progress_thumb" />
+
+            <TextView
+                android:id="@+id/maxSeekLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25px"
+                android:text="100"
+                android:textColor="#D9D9D9"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/showDistanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distanceBarLayout"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="50px"
+            android:text="Show distance in Mi or Km"
+            android:textColor="#7A7A7A"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/unitsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="177px"
+            android:layout_below="@+id/showDistanceTextView"
+            android:layout_marginTop="50px"
+            android:background="@drawable/km_bg" >
+
+            <TextView
+                android:id="@+id/milesTextView"
+                android:layout_width="470px"
+                android:layout_height="130px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70px"
+                android:gravity="center"
+                android:text="Mi"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/KmTextView"
+                android:layout_width="470px"
+                android:layout_height="130px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70px"
+                android:background="#DDDDDD"
+                android:gravity="center"
+                android:text="Km"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/showAgesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unitsLayout"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="50px"
+            android:text="Show ages between: 20-45"
+            android:textColor="#7A7A7A"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/ageRangeBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_below="@+id/showAgesTextView"
+            android:layout_marginTop="30px"
+            android:background="#F7F7F7" >
+
+            <TextView
+                android:id="@+id/minAgeRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25px"
+                android:text="18"
+                android:textColor="#D9D9D9"
+                android:textSize="18dp" />
+
+            <com.edmodo.rangebar.RangeBar
+                android:id="@+id/ageRangeBar"
+                android:layout_width="900px"
+                android:layout_height="100px"
+                android:layout_centerInParent="true"
+                android:max="100"
+                android:thumb="@drawable/progress_thumb"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/maxAgeRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25px"
+                android:text="100"
+                android:textColor="#D9D9D9"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="600px"
+            android:layout_height="150px" 
+            android:layout_below="@+id/ageRangeBarLayout"
+            android:layout_marginTop="300px"
+            android:layout_centerHorizontal="true"
+            android:text="Log Out"
+            android:textSize="25dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

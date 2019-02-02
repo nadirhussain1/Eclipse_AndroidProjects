@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2843" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/mainHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120px" >
+
+            <View
+                android:id="@+id/backClickArea"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px" />
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="19px"
+                android:layout_height="33px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/back_arrow_white" />
+
+            <TextView
+                android:id="@+id/expenseDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/expenses_details_label"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/editIcon"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/edit_button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/soldValueLayout"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:layout_marginTop="120px"
+            android:background="#111A2F" >
+
+            <TextView
+                android:id="@+id/ValorStaticTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="VALOR:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/ValorValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:text="R$ 300,00"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/centralWhiteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="345px"
+            android:layout_alignTop="@+id/soldValueLayout"
+            android:layout_marginTop="280px"
+            android:background="#FFFFFF" >
+
+            <RelativeLayout
+                android:id="@+id/CategoriesDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="115px"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/catgoriesStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/categoria_text_label"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/catagoriesValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:text="Aluguel"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#66000000"
+                    android:tag="constantHeight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/DueDateDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="115px"
+                android:layout_alignTop="@+id/CategoriesDetailLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="115px" >
+
+                <TextView
+                    android:id="@+id/dueDateStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/due_date_label_nodot"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/dueDateValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:text="01/01/2014"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#66000000"
+                    android:tag="constantHeight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/periodicityDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="115px"
+                android:layout_alignTop="@+id/DueDateDetailLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="115px" >
+
+                <TextView
+                    android:id="@+id/PeriodicityStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:text="@string/periodicity_label"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/periodicityValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:text="Mensal"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

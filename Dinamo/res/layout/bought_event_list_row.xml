@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/eventDetailsRow"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/eventPhoto"
+            android:layout_width="30px"
+            android:layout_height="22px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/camera_icon" />
+
+        <RelativeLayout
+            android:id="@+id/verticalCenterLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100px"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/eventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13/01/2014"
+                android:textColor="#606060"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/establishmentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eventDate"
+                android:layout_marginTop="3px"
+                android:text="Nom do estabelecimento nom..."
+                android:textColor="#606060"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/redArrow"
+            android:layout_width="17px"
+            android:layout_height="29px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:background="@drawable/arrow_right_red" />
+
+        <TextView
+            android:id="@+id/eventBillAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:layout_toLeftOf="@+id/redArrow"
+            android:gravity="center_vertical"
+            android:text="R$ 1300"
+            android:textColor="#1D2843"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA000000" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="650px"
+        android:layout_height="1050px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65px" >
+
+        <RelativeLayout
+            android:id="@+id/topHeadingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="78px"
+            android:background="@drawable/popup_title" >
+
+            <TextView
+                android:id="@+id/DialogHeading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:gravity="center_vertical"
+                android:text="SELECT CURRENCIES"
+                android:textColor="#5B5B5B"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/selectAllButton"
+                android:layout_width="78px"
+                android:layout_height="53px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/select_all_on" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
+            android:layout_marginTop="72px"
+            android:background="@drawable/popup_bg" >
+
+            <ListView
+                android:id="@+id/currListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:divider="@null"
+                android:scrollbars="none" >
+            </ListView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="403px"
+            android:layout_height="116px"
+            android:layout_below="@+id/contentLayout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15px"
+            android:background="@drawable/done" />
+    </RelativeLayout>
+
+</RelativeLayout>

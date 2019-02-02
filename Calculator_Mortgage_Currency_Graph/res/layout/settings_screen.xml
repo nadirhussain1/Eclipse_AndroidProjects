@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBCBCB" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="700px"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/GoProLayout"
+            android:layout_width="match_parent"
+            android:layout_height="141px"
+            android:layout_marginTop="15px"
+            android:background="@drawable/light_settings_card"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/GoProImage"
+                android:layout_width="210px"
+                android:layout_height="140px"
+                android:layout_marginTop="1px"
+                android:background="@drawable/gopro" />
+
+            <TextView
+                android:id="@+id/NoAdsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="10px"
+                android:layout_toRightOf="@+id/GoProImage"
+                android:text="No Advertisements"
+                android:textColor="#4C4C4C"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/sweetThemesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/NoAdsText"
+                android:layout_alignTop="@+id/NoAdsText"
+                android:layout_marginTop="40px"
+                android:text="Friggin&apos; Sweet Themes"
+                android:textColor="#363636"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/JustDollarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/NoAdsText"
+                android:layout_alignTop="@+id/sweetThemesText"
+                android:layout_marginTop="40px"
+                android:text="Just $2.99!"
+                android:textColor="#1FAFEC"
+                android:textSize="17dp"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/HapticFeedbackLayout"
+            android:layout_width="match_parent"
+            android:layout_height="141px"
+            android:layout_below="@+id/GoProLayout"
+            android:layout_marginTop="10px"
+            android:background="@drawable/light_settings_card" >
+
+            <ImageView
+                android:id="@+id/HapticImage"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/hapticfeedbackon" />
+
+            <RelativeLayout
+                android:id="@+id/hapticTextLayout"
+                android:layout_width="500px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/HapticImage"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/hapticFeedHeadText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HAPTIC FEEDBACK"
+                    android:textColor="#171717"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/hapticFeedSecondText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/hapticFeedHeadText"
+                    android:layout_marginTop="50px"
+                    android:text="Button vibration on or off"
+                    android:textColor="#8B8B8B"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/thousandsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="141px"
+            android:layout_below="@+id/HapticFeedbackLayout"
+            android:layout_marginTop="10px"
+            android:background="@drawable/light_settings_card" >
+
+            <ImageView
+                android:id="@+id/decimalIndicImage"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18px"
+                android:background="@drawable/americantd" />
+
+            <RelativeLayout
+                android:id="@+id/decimalIndTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/decimalIndicImage"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/decimalIndiHeadText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="THOUSANDS/DECIMAL INDICATOR"
+                    android:textColor="#171717"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/deciIndicatSecondText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/decimalIndiHeadText"
+                    android:layout_marginTop="50px"
+                    android:text="European or American standard"
+                    android:textColor="#8B8B8B"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/currSymbolLayout"
+            android:layout_width="match_parent"
+            android:layout_height="141px"
+            android:layout_below="@+id/thousandsLayout"
+            android:layout_marginTop="10px"
+            android:background="@drawable/light_settings_card" >
+
+            <ImageView
+                android:id="@+id/currSymbolImage"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/currency_dollar" />
+
+            <RelativeLayout
+                android:id="@+id/currTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/currSymbolImage"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/CurrencyHeadText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CURRENCY SYMBOL"
+                    android:textColor="#171717"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/CurrenSecondText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/CurrencyHeadText"
+                    android:layout_marginTop="50px"
+                    android:text="Set your home currency symbol"
+                    android:textColor="#8B8B8B"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/salesTaxLayout"
+            android:layout_width="match_parent"
+            android:layout_height="141px"
+            android:layout_below="@+id/currSymbolLayout"
+            android:layout_marginTop="10px"
+            android:background="@drawable/light_settings_card" >
+
+            <ImageView
+                android:id="@+id/salesTaxImage"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/salestax" />
+
+            <RelativeLayout
+                android:id="@+id/salesTaxTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/salesTaxImage"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/SalesTaxHeadText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SALES TAX"
+                    android:textColor="#171717"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/salesTaxSecondText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/SalesTaxHeadText"
+                    android:layout_marginTop="50px"
+                    android:text="Sales tax settings for tipping"
+                    android:textColor="#8B8B8B"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rateAppLayout"
+            android:layout_width="match_parent"
+            android:layout_height="141px"
+            android:layout_below="@+id/salesTaxLayout"
+            android:layout_marginTop="10px"
+            android:background="@drawable/light_settings_card" >
+
+            <ImageView
+                android:id="@+id/rateAppImage"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/rateapp" />
+
+            <RelativeLayout
+                android:id="@+id/rateAppTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/rateAppImage"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/rateAppHeadText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RATE APP"
+                    android:textColor="#171717"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/rateAppSecondText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/rateAppHeadText"
+                    android:layout_marginTop="50px"
+                    android:text="How can we improve the app?"
+                    android:textColor="#8B8B8B"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15px"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8857883061140930/9811587801" >
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

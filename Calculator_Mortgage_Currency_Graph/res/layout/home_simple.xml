@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/inputDisplayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/simpleButtonsLayout"
+            android:background="#262626" >
+
+            <com.calculations.brain.CalcEditText
+                android:id="@+id/DisplayInputExpArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#262626"
+                android:gravity="right"
+                android:paddingRight="25dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#51BEEC"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/resultDisplayArea"
+                android:layout_width="match_parent"
+                android:layout_height="115px"
+                android:layout_alignTop="@+id/DisplayInputExpArea"
+                android:layout_marginTop="40px"
+                android:background="#262626"
+                android:gravity="right|top"
+                android:paddingRight="25dp"
+                android:text=""
+                android:textColor="#F0F0F0"
+                android:textSize="46dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/simpleButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="860px"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="360px"
+                android:layout_height="98px"
+                android:background="@drawable/light_button_clear" />
+
+            <Button
+                android:id="@+id/backspaceButton"
+                android:layout_width="360px"
+                android:layout_height="98px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/light_button_backspace" />
+
+            <RelativeLayout
+                android:id="@+id/firstRow"
+                android:layout_width="match_parent"
+                android:layout_height="153px"
+                android:layout_alignTop="@+id/clearButton"
+                android:layout_marginTop="98px" >
+
+                <Button
+                    android:id="@+id/percentButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_percent" />
+
+                <Button
+                    android:id="@+id/sqrtButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/percentButton"
+                    android:background="@drawable/light_button_sqrt" />
+
+                <Button
+                    android:id="@+id/divideButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/sqrtButton"
+                    android:background="@drawable/light_button_divide" />
+
+                <Button
+                    android:id="@+id/multiplyButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/divideButton"
+                    android:background="@drawable/light_button_multiply" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/secondRow"
+                android:layout_width="match_parent"
+                android:layout_height="153px"
+                android:layout_alignTop="@+id/firstRow"
+                android:layout_marginTop="153px" >
+
+                <Button
+                    android:id="@+id/digitSevenButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_7" />
+
+                <Button
+                    android:id="@+id/digitEightButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitSevenButton"
+                    android:background="@drawable/light_button_8" />
+
+                <Button
+                    android:id="@+id/digitNineButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitEightButton"
+                    android:background="@drawable/light_button_9" />
+
+                <Button
+                    android:id="@+id/subtractButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitNineButton"
+                    android:background="@drawable/light_button_subtract" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/thirdRow"
+                android:layout_width="match_parent"
+                android:layout_height="153px"
+                android:layout_alignTop="@+id/secondRow"
+                android:layout_marginTop="153px" >
+
+                <Button
+                    android:id="@+id/digitFourButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_4" />
+
+                <Button
+                    android:id="@+id/digitFiveButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitFourButton"
+                    android:background="@drawable/light_button_5" />
+
+                <Button
+                    android:id="@+id/digitSixButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitFiveButton"
+                    android:background="@drawable/light_button_6" />
+
+                <Button
+                    android:id="@+id/addButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitSixButton"
+                    android:background="@drawable/light_button_add" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fourthRow"
+                android:layout_width="540px"
+                android:layout_height="153px"
+                android:layout_alignTop="@+id/thirdRow"
+                android:layout_marginTop="153px" >
+
+                <Button
+                    android:id="@+id/digitOneButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_1" />
+
+                <Button
+                    android:id="@+id/digitTwoButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitOneButton"
+                    android:background="@drawable/light_button_2" />
+
+                <Button
+                    android:id="@+id/digitThreeButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitTwoButton"
+                    android:background="@drawable/light_button_3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fifthRow"
+                android:layout_width="540px"
+                android:layout_height="153px"
+                android:layout_alignTop="@+id/fourthRow"
+                android:layout_marginTop="153px" >
+
+                <Button
+                    android:id="@+id/digitDoubleZeroButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_00" />
+
+                <Button
+                    android:id="@+id/digitZeroButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitDoubleZeroButton"
+                    android:background="@drawable/light_button_0" />
+
+                <Button
+                    android:id="@+id/digitDecimalButton"
+                    android:layout_width="180px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitZeroButton"
+                    android:background="@drawable/light_button_decimal" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/equalsButton"
+                android:layout_width="180px"
+                android:layout_height="306px"
+                android:layout_alignTop="@+id/fourthRow"
+                android:layout_toRightOf="@+id/fourthRow"
+                android:background="@drawable/light_button_equals" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

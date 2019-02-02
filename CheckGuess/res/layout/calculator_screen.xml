@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingWrapper"
+        android:layout_width="600px"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" >
+
+        <EditText
+            android:id="@+id/calculateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100px"
+            android:inputType="numberDecimal" />
+
+        <RelativeLayout
+            android:id="@+id/calculatorArea"
+            android:layout_width="450px"
+            android:layout_height="500px"
+            android:layout_below="@+id/calculateEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:background="#1F000000" >
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="300px"
+                android:layout_height="95px"
+                android:text="DELETE"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="140px"
+                android:layout_height="95px"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@+id/deleteButton"
+                android:text="CLR"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/firstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="95px"
+                android:layout_below="@+id/deleteButton"
+                android:layout_marginTop="5px" >
+
+                <Button
+                    android:id="@+id/buttonSeven"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:text="7"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonEight"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonSeven"
+                    android:text="8"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonNine"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonEight"
+                    android:text="9"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonDivide"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonNine"
+                    android:text="/"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/secondRow"
+                android:layout_width="fill_parent"
+                android:layout_height="95px"
+                android:layout_below="@+id/firstRow"
+                android:layout_marginTop="5px" >
+
+                <Button
+                    android:id="@+id/buttonFour"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:text="4"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonFive"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonFour"
+                    android:text="5"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonSix"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonFive"
+                    android:text="6"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonMultiply"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonSix"
+                    android:text="X"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/thirdRow"
+                android:layout_width="fill_parent"
+                android:layout_height="95px"
+                android:layout_below="@+id/secondRow"
+                android:layout_marginTop="5px" >
+
+                <Button
+                    android:id="@+id/buttonOne"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonTwo"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonOne"
+                    android:text="2"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonThree"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonTwo"
+                    android:text="3"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonSubtract"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonThree"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/FourthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="95px"
+                android:layout_below="@+id/thirdRow"
+                android:layout_marginTop="5px" >
+
+                <Button
+                    android:id="@+id/buttonDot"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:text="."
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonZero"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonDot"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonEqual"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonZero"
+                    android:text="="
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="110px"
+                    android:layout_height="95px"
+                    android:layout_marginLeft="5px"
+                    android:layout_toRightOf="@+id/buttonEqual"
+                    android:text="+"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/calculatorDoneButton"
+            android:layout_width="290px"
+            android:layout_height="90px"
+            android:layout_below="@+id/calculatorArea"
+            android:layout_marginTop="50px"
+            android:text="Done" />
+
+        <Button
+            android:id="@+id/calculatorCancelButton"
+            android:layout_width="290px"
+            android:layout_height="90px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/calculatorArea"
+            android:layout_marginTop="50px"
+            android:text="Cancel" />
+    </RelativeLayout>
+
+</RelativeLayout>

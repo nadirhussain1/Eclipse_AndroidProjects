@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CdnLocater</string>
+    <string name="connection_dialog_title">No Internet</string>
+    <string name="connection_dialog_message">We can\'t proceed.Check your internet connection.</string>
+    <string name="exception_toast_message">Exception Occured.</string>
+    <string name="locater_failure_title">Locater Failed</string>
+    <string name="locater_failure_message">Unable to locate server</string>
+    <string name="gps_disabled_title">GPS DISABLED</string>
+    <string name="gps_disabled_message">Enable GPS in order to proceed.</string>
+    <string name="loading_message">Please Wait, Loading image</string>
+    <string name="loading_init_message">Calculations in progress</string>
+</resources>

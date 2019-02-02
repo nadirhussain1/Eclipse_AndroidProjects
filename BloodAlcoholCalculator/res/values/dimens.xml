@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="my_view_margin">5dp</dimen>
+    <dimen name="my_view_margin10">10dp</dimen>
+    <dimen name="my_view_margin20">15dp</dimen>
+    <dimen name="campaign_textfontsize10">11dp</dimen>
+    <dimen name="campaign_textfontsize11">10dp</dimen>
+	<dimen name="campaign_textfontsize12">12dp</dimen>
+	<dimen name="campaign_textfontsize13">13dp</dimen>
+	<dimen name="campaign_textfontsize14">14dp</dimen>
+	<dimen name="campaign_textfontsize16">16dp</dimen>
+	<dimen name="campaign_textfontsize18">18dp</dimen>
+	<dimen name="campaign_textfontsize22">22dp</dimen>
+	<dimen name="campaign_textfontsize32">32dp</dimen>
+	<dimen name="campaign_textfontsize36">37dp</dimen>
+	<dimen name="campaign_textfontsize38">42dp</dimen>
+</resources>

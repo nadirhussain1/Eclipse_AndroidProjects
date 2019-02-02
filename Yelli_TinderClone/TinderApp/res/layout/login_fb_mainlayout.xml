@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/appBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/flower_bg"
+            android:layout_width="616px"
+            android:layout_height="976px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/flow_bg" />
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/blue_header_color" >
+
+            <View
+                android:id="@+id/appHeaderLogo"
+                android:layout_width="254px"
+                android:layout_height="71px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/yelli_header_logo" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/facebookLoginButton"
+            android:layout_width="894px"
+            android:layout_height="145px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50px"
+            android:background="@drawable/facebook_login_button" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/facebookLoginButton"
+            android:layout_below="@+id/headerLayout" />
+    </RelativeLayout>
+
+</RelativeLayout>

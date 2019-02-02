@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/inputDisplayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/inputLabelLayout"
+            android:background="#000000" >
+
+            <EditText
+                android:id="@+id/loanAmountInputEditArea"
+                android:layout_width="358px"
+                android:layout_height="match_parent"
+                android:background="#2F2F2F"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#30C1FF"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/ratePerInputEditArea"
+                android:layout_width="178px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="360px"
+                android:background="#2F2F2F"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#30C1FF"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/monthsInputEditArea"
+                android:layout_width="180px"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/ratePerInputEditArea"
+                android:layout_marginLeft="180px"
+                android:background="#2F2F2F"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#30C1FF"
+                android:textSize="40dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/inputLabelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_above="@+id/loanResultScrollView"
+            android:background="#000000" >
+
+            <TextView
+                android:id="@+id/loanAmountInputLabel"
+                android:layout_width="358px"
+                android:layout_height="match_parent"
+                android:background="#1D1D1D"
+                android:gravity="center"
+                android:text="LOAN AMOUNT"
+                android:textColor="#616060"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rateInputLabel"
+                android:layout_width="178px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="360px"
+                android:background="#1D1D1D"
+                android:gravity="center"
+                android:text="RATE(%)"
+                android:textColor="#616060"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/monthsInputLabel"
+                android:layout_width="180px"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/rateInputLabel"
+                android:layout_marginLeft="180px"
+                android:background="#1D1D1D"
+                android:gravity="center"
+                android:text="MONTHS"
+                android:textColor="#616060"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/loanResultScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="480px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="395px"
+            android:isScrollContainer="false" >
+
+            <RelativeLayout
+                android:id="@+id/resultDisplayLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E4E4" >
+
+                <TextView
+                    android:id="@+id/monthlyStaticText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35px"
+                    android:layout_marginTop="20px"
+                    android:text="MONTHLY"
+                    android:textColor="#808080"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/monthlyPaymentLayout"
+                    android:layout_width="690px"
+                    android:layout_height="75px"
+                    android:layout_below="@+id/monthlyStaticText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8px"
+                    android:background="@drawable/light_currency_card" >
+
+                    <TextView
+                        android:id="@+id/monthPaymentStaticText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25px"
+                        android:gravity="center_vertical"
+                        android:text="MONTHLY PAYMENT"
+                        android:textColor="#0B0B0B"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/monthlyPaymentAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25px"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#373737"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/NoOfPaymentLayout"
+                    android:layout_width="690px"
+                    android:layout_height="75px"
+                    android:layout_below="@+id/monthlyPaymentLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/light_currency_card" >
+
+                    <TextView
+                        android:id="@+id/NoOfPaymentsStaticText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25px"
+                        android:gravity="center_vertical"
+                        android:text="# OF PAYMENTS"
+                        android:textColor="#0B0B0B"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/NoOfPaymentsAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25px"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#373737"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/totalInterestLayout"
+                    android:layout_width="690px"
+                    android:layout_height="75px"
+                    android:layout_below="@+id/NoOfPaymentLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/light_currency_card" >
+
+                    <TextView
+                        android:id="@+id/TotalInterestStaticText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25px"
+                        android:gravity="center_vertical"
+                        android:text="TOTAL INTEREST"
+                        android:textColor="#0B0B0B"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalInterestAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25px"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#373737"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/totalPaymentsLayout"
+                    android:layout_width="690px"
+                    android:layout_height="75px"
+                    android:layout_below="@+id/totalInterestLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/light_currency_card" >
+
+                    <TextView
+                        android:id="@+id/TotalPaymentsStaticText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25px"
+                        android:gravity="center_vertical"
+                        android:text="TOTAL PAYMENTS"
+                        android:textColor="#0B0B0B"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalPaymentsAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25px"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#373737"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/BiWeeklyStaticText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/totalPaymentsLayout"
+                    android:layout_marginLeft="35px"
+                    android:layout_marginTop="20px"
+                    android:text="BI-WEEKLY"
+                    android:textColor="#808080"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/BiWeekPaymentLayout"
+                    android:layout_width="690px"
+                    android:layout_height="75px"
+                    android:layout_below="@+id/BiWeeklyStaticText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8px"
+                    android:background="@drawable/light_currency_card" >
+
+                    <TextView
+                        android:id="@+id/BiWeekPaymentStaticText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25px"
+                        android:gravity="center_vertical"
+                        android:text="Bi-WEEKLY PAYMENT"
+                        android:textColor="#0B0B0B"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/BiWeekPaymentAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25px"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#373737"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/BiWeekNoPaymentsLayout"
+                    android:layout_width="690px"
+                    android:layout_height="75px"
+                    android:layout_below="@+id/BiWeekPaymentLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/light_currency_card" >
+
+                    <TextView
+                        android:id="@+id/BiWeekNoPaymentsStaticText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25px"
+                        android:gravity="center_vertical"
+                        android:text="# OF PAYMENTS"
+                        android:textColor="#0B0B0B"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/BiWeekNoPaymentsAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25px"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#373737"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/BiTotalInterestLayout"
+                    android:layout_width="690px"
+                    android:layout_height="75px"
+                    android:layout_below="@+id/BiWeekNoPaymentsLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/light_currency_card" >
+
+                    <TextView
+                        android:id="@+id/BiTotalInterStaticText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25px"
+                        android:gravity="center_vertical"
+                        android:text="TOTAL INTEREST"
+                        android:textColor="#0B0B0B"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/BiTotalInterestAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25px"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#373737"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/BiTotalPaymentsLayout"
+                    android:layout_width="690px"
+                    android:layout_height="75px"
+                    android:layout_below="@+id/BiTotalInterestLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/light_currency_card" >
+
+                    <TextView
+                        android:id="@+id/BiTotalPayStaticText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="25px"
+                        android:gravity="center_vertical"
+                        android:text="TOTAL PAYMENTS"
+                        android:textColor="#0B0B0B"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/BiTotalPayAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25px"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#373737"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/keyPadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="395px"
+            android:layout_alignParentBottom="true" >
+
+            <View
+                android:id="@+id/keyBoardTopLine"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#BFBFBF"
+                android:tag="constantHeight" />
+
+            <RelativeLayout
+                android:id="@+id/firstRow"
+                android:layout_width="match_parent"
+                android:layout_height="131px"
+                android:layout_marginTop="2px" >
+
+                <Button
+                    android:id="@+id/digitSevenButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_7" />
+
+                <Button
+                    android:id="@+id/digitEightButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitSevenButton"
+                    android:background="@drawable/light_button_8" />
+
+                <Button
+                    android:id="@+id/digitNineButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitEightButton"
+                    android:background="@drawable/light_button_9" />
+
+                <Button
+                    android:id="@+id/numPadClearButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitNineButton"
+                    android:background="@drawable/light_numpad_clear" />
+
+                <Button
+                    android:id="@+id/numPadBackSpaceButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/numPadClearButton"
+                    android:background="@drawable/light_numpad_backspace" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/secondRow"
+                android:layout_width="match_parent"
+                android:layout_height="131px"
+                android:layout_below="@+id/firstRow" >
+
+                <Button
+                    android:id="@+id/digitFourButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_4" />
+
+                <Button
+                    android:id="@+id/digitFiveButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitFourButton"
+                    android:background="@drawable/light_button_5" />
+
+                <Button
+                    android:id="@+id/digitSixButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitFiveButton"
+                    android:background="@drawable/light_button_6" />
+
+                <Button
+                    android:id="@+id/digitZeroButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitSixButton"
+                    android:background="@drawable/light_button_0" />
+
+                <Button
+                    android:id="@+id/digitDoubleZeroButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitZeroButton"
+                    android:background="@drawable/light_button_00" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/thirdRow"
+                android:layout_width="match_parent"
+                android:layout_height="131px"
+                android:layout_below="@+id/secondRow" >
+
+                <Button
+                    android:id="@+id/digitOneButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_1" />
+
+                <Button
+                    android:id="@+id/digitTwoButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitOneButton"
+                    android:background="@drawable/light_button_2" />
+
+                <Button
+                    android:id="@+id/digitThreeButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitTwoButton"
+                    android:background="@drawable/light_button_3" />
+
+                <Button
+                    android:id="@+id/digitDecimalButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitThreeButton"
+                    android:background="@drawable/light_button_decimal" />
+
+                <Button
+                    android:id="@+id/keyPadHideButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitDecimalButton"
+                    android:background="@drawable/light_numpad_hide" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

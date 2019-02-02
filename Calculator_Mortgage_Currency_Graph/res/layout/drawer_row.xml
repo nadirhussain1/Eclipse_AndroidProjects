@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100px" >
+
+        <ImageView
+            android:id="@+id/SelectorImage"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="65px"
+            android:background="@drawable/calculator_selected" />
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:layout_toRightOf="@+id/SelectorImage"
+            android:text="Calculator"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/themeSelectorImage"
+            android:layout_width="29px"
+            android:layout_height="29px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:background="@drawable/selector" />
+
+        <TextView
+            android:id="@+id/themeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/themeSelectorImage"
+            android:text=""
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/dividerLight"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="98px"
+            android:background="@drawable/separator_light"
+            android:tag="constantHeight"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/dividerDark"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="98px"
+            android:background="@drawable/separator_dark"
+            android:tag="constantHeight"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

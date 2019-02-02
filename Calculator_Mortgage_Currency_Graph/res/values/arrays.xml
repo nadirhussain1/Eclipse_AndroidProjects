@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="lengthtypes_array">
+        <item>Centimeters</item>
+        <item>Feet</item>
+        <item>Inches</item>
+        <item>Kilometers</item>
+        <item>Meters</item>
+        <item>Miles</item>
+        <item>Millimeters</item>
+        <item>Nanometers</item>
+        <item>PICA</item>
+        <item>YARD</item>
+    </string-array>
+    <string-array name="areatypes_array">
+        <item>Acres</item>
+        <item>Hectares</item>
+        <item>Square Centimeters</item>
+        <item>Square Feet</item>
+        <item>Square Inches</item>
+        <item>Square Kilometers</item>
+        <item>Square Meters</item>
+        <item>Square Miles</item>
+        <item>Square Milimeters</item>
+        <item>Square YARDs</item>
+    </string-array>
+    <string-array name="weighttypes_array">
+        <item>Carat</item>
+        <item>Centigram</item>
+        <item>Gram</item>
+        <item>Kilogram</item>
+        <item>Miligram</item>
+        <item>Ounce</item>
+        <item>Pound</item>
+        <item>Stone</item>
+    </string-array>
+    <string-array name="timetypes_array">
+        <item>Day</item>
+        <item>Hour</item>
+        <item>Minute</item>
+        <item>Second</item>
+        <item>Week</item>
+    </string-array>
+    <string-array name="volumetypes_array">
+        <item>Cubic Centimeter</item>
+        <item>Cubic Feet</item>
+        <item>Cubic Inches</item>
+        <item>Cubic Meters</item>
+        <item>Cubic Yard</item>
+        <item>Fluid Ounce(US)</item>
+        <item>Gallon(US)</item>
+        <item>Liter</item>
+        <item>Pint(US)</item>
+        <item>QUART(US)</item>
+    </string-array>
+    <string-array name="temptypes_array">
+        <item>Degrees Celsius</item>
+        <item>Degrees Farenheit</item>
+        <item>Kelvin</item>
+        <item>Rankine</item>
+    </string-array>
+    <string-array name="memorytypes_array">
+        <item>Bits</item>
+        <item>Bytes</item>
+        <item>Kilobytes</item>
+        <item>Megabytes</item>
+        <item>Gigabytes</item>
+        <item>Terabytes</item>
+        <item>Petabytes</item>
+        <item>Exabytes</item>
+        <item>Zettabytes</item>
+        <item>Yottabytes</item>
+    </string-array>
+    <string-array name="forcetypes_array">
+        <item>Newton</item>
+        <item>Exanewton</item>
+        <item>Petanewton</item>
+        <item>Teranewton</item>
+        <item>Giganewton</item>
+        <item>Meganewton</item>
+        <item>Kilonewton</item>
+        <item>Hectonewton</item>
+        <item>Dekanewton</item>
+        <item>Decinewton</item>
+        <item>Centinewton</item>
+        <item>Millinewton</item>
+        <item>Micronewton</item>
+        <item>Nanonewton</item>
+        <item>Piconewton</item>
+        <item>Femtonewton</item>
+        <item>Attonewton</item>
+        <item>Dyne</item>
+        <item>Joule/meter</item>
+        <item>Joule/Centimeter</item>
+        <item>gram-force</item>
+        <item>kilogram-force</item>
+        <item>ton-force(short)</item>
+        <item>ton-force(long)</item>
+        <item>ton-force(metric)</item>
+        <item>kip-force</item>
+        <item>kilopound-force</item>
+        <item>pound-force</item>
+        <item>ounce-force</item>
+        <item>poundal</item>
+        <item>pound foot</item>
+        <item>pond</item>
+        <item>kilopond</item>
+    </string-array>
+    <string-array name="cookingtypes_array">
+        <item>#2.5 can</item>
+        <item>#10 can</item>
+        <item>barrel[UK,wine]</item>
+        <item>barrel[UK]</item>
+        <item>barrel[US,dry]</item>
+        <item>barrel[US,federal]</item>
+        <item>barrel[US,liquid]</item>
+        <item>bucket[UK]</item>
+        <item>bucket[US]</item>
+        <item>bushel[UK]</item>
+        <item>bushel[US,dry]</item>
+        <item>centiliter</item>
+        <item>coffee spoon</item>
+        <item>cubic centimeter</item>
+        <item>cubic decimeter</item>
+        <item>cubic foot</item>
+        <item>cubic inch</item>
+        <item>cubic meter</item>
+        <item>cubic micrometer</item>
+        <item>cubic millimeter</item>
+        <item>cup[Canada]</item>
+        <item>cup(metric)</item>
+        <item>cup(US)</item>
+        <item>dash</item>
+        <item>deciliter</item>
+        <item>dekaliter</item>
+        <item>demi</item>
+        <item>dram</item>
+        <item>drop</item>
+        <item>fifth</item>
+        <item>gallon[UK]</item>
+        <item>gallon[US,dry]</item>
+        <item>gallon[US,liquid]</item>
+        <item>gill[UK]</item>
+        <item>gill[US]</item>
+        <item>hectoliter</item>
+        <item>hogshead[UK]</item>
+        <item>hogshead[US]</item>
+        <item>jigger</item>
+        <item>kilolliter</item>
+        <item>liter</item>
+        <item>measure[ancient hibrew]</item>
+        <item>megaliter</item>
+        <item>microliter</item>
+        <item>milliliter</item>
+        <item>minim[UK]</item>
+        <item>minim[US]</item>
+        <item>ounce[UK,liquid]</item>
+        <item>ounce[US,liquid]</item>
+        <item>peck[UK]</item>
+        <item>peck[US]</item>
+        <item>pinch</item>
+        <item>pint[UK]</item>
+        <item>pint[US,dry]</item>
+        <item>pint[US,liquid]</item>
+        <item>pipe[UK]</item>
+        <item>pipe[US]</item>
+        <item>pony</item>
+        <item>quart[Germany]</item>
+        <item>quart[ancient hebrew]</item>
+        <item>quart[UK]</item>
+        <item>quart[US,dry]</item>
+        <item>quart[US,liquid]</item>
+        <item>Robie</item>
+        <item>Robiespoon</item>
+        <item>Robie Shot</item>
+        <item>shot</item>
+        <item>Tablespoon[metric]</item>
+        <item>Tablespoon[UK]</item>
+        <item>Tablespoon[US]</item>
+        <item>Teaspoon[metric]</item>
+        <item>Teaspoon[UK]</item>
+        <item>Teaspoon[US]</item>
+    </string-array>
+    
+    <string-array name="angletypes_array">
+         <item>radian</item>
+         <item>mil</item>
+         <item>grad</item>
+         <item>degree</item>
+         <item>minute</item>
+         <item>second</item>
+         <item>point</item>
+    </string-array>
+     <string-array name="generaltypes_array">
+         <item>Length</item>
+         <item>Area</item>
+         <item>Weight</item>
+         <item>Time</item>
+         <item>Temperature</item>
+         <item>Volume</item>
+         <item>PC Memory</item>
+         <item>Force</item>
+         <item>Cooking</item>
+         <item>Angles</item>
+         <item>Energy</item>
+         <item>Power</item>
+         <item>Speed</item>
+         <item>Density</item>
+    </string-array>
+    <string-array name="energytypes_array">
+        <item>autojoule</item>
+        <item>Board of Trade unit</item>
+        <item>Btu</item>
+        <item>Btu(thermochemical)</item>
+        <item>calorie[I.T.]</item>
+        <item>calorie[15°C]</item>
+        <item>calorie[nutritional]</item>
+        <item>calorie[thermochemical]</item>
+        <item>celsius heat unit</item>
+        <item>centijoule</item>
+        <item>cheval vapeur heure</item>
+        <item>decijoule</item>
+        <item>dekajoule</item>
+        <item>dekawatt hour</item>
+        <item>dekatherm</item>
+        <item>electronvolt</item>
+        <item>erg</item>
+        <item>exajoule</item>
+        <item>exawatt hour</item>
+        <item>femtojoule</item>
+        <item>foot pound</item>
+        <item>foot poundal</item>
+        <item>gallon[UK] of automotive gasoline</item>
+        <item>gallon[US] of automotive gasoline</item>
+        <item>gallon[UK] of aviation gasoline</item>
+        <item>gallon[US] of aviation gasoline</item>
+        <item>gallon[UK] of diesel oil</item>
+        <item>gallon[US] of diesel oil</item>
+        <item>gallon[UK] of distilate#2 fuel oil</item>
+        <item>gallon[US] of distilate#2 fuel oil</item>
+        <item>gallon[UK] of kerosene type jet fuel</item>
+        <item>gallon[U.S] of kerosene type jet fuel</item>
+        <item>gallon[UK] of LPG</item>
+        <item>gallon[US] of LPG</item>
+        <item>gallon[UK] of naphtha type jet fuel</item>
+        <item>gallon[US] of naphtha type jet fuel</item>
+        <item>gallon[UK] of Kerosene</item>
+        <item>gallon[U.S] of Kerosene</item>
+        <item>gallon[UK] of residual fuel oil</item>
+        <item>gallon[US] of residual fuel oil</item>
+        <item>gigacalorie[I.T.]</item>
+        <item>gigacalorie[15°C]</item>
+        <item>gigaelectronvolt</item>
+        <item>gigajoule</item>
+        <item>gigawatt hour</item>
+        <item>gram calorie</item>
+        <item>hartree</item>
+        <item>hectojoule</item>
+        <item>hectowatt hour</item>
+        <item>horsepower hour</item>
+        <item>hundred cubic foot of natural gas</item>
+        <item>inch ounce</item>
+        <item>inch pound</item>
+        <item>joule</item>
+        <item>kilocalrie[15°C]</item>
+        <item>kilocalrie[I.T.]</item>
+        <item>kilocalrie[thermochemical]</item>
+        <item>kiloelectronvolt</item>
+        <item>kilogram calorie</item>
+        <item>kilogram-force meter</item>
+        <item>kilojoule</item>
+        <item>kilopond meter</item>
+        <item>kiloton[explosive]</item>
+        <item>kilowatt hour</item>
+        <item>liter atmosphere</item>
+        <item>megaelectronvolt</item>
+        <item>megacalorie[I.T.]</item>
+        <item>megacalorie[15°C]</item>
+        <item>megajoule</item>
+        <item>megalerg</item>
+        <item>megaton[explosive]</item>
+        <item>megawatthour</item>
+        <item>meter kilogram-force</item>
+        <item>microjoule</item>
+        <item>millijoule</item>
+        <item>myriawatt hour</item>
+        <item>nanojoule</item>
+        <item>newton meter</item>
+        <item>petajoule</item>
+        <item>petawatthour</item>
+        <item>pferdestarkenstunde</item>
+        <item>picojoule</item>
+        <item>Q unit</item>
+        <item>teraelectronvolt</item>
+        <item>terajoule</item>
+        <item>terawatthour</item>
+        <item>therm[Europe]</item>
+        <item>therm[US]</item>
+        <item>thermie</item>
+        <item>ton[explosive]</item>
+        <item>tonne of coal equivalent</item>
+        <item>tonne of oil equivalent</item>
+        <item>watthour</item>
+        <item>wattsecond</item>
+        <item>yoctojoule</item>
+        <item>yottajoule</item>
+        <item>yottawatthour</item>
+        <item>zeptojoule</item>
+        <item>zettajoule</item>
+        <item>zettawatthour</item>
+    </string-array>
+    
+     <string-array name="powertypes_array">
+         
+      <item>autowatt</item>
+      <item>Btu/hour[I.T.]</item>
+      <item>Btu/minute[I.T.]</item>
+      <item>Btu/second[I.T.]</item>
+      <item>calorie/hour[I.T.]</item>
+      <item>calorie/minute[I.T.]</item>
+      <item>calorie/second[I.T.]</item>
+      <item>centiwatt</item>
+      <item>cheval vapeur</item>
+      <item>clusec</item>
+      <item>deciwatt</item>
+      <item>dekawatt</item>
+      <item>dyne centimeter/hour</item>
+      <item>dyne centimeter/minute</item>
+      <item>dyne centimeter/second</item>
+      <item>erg/hour</item>
+      <item>erg/minute</item>
+      <item>erg/second</item>
+      <item>exawatt</item>
+      <item>femtowatt</item>
+      <item>foot pound-force/hour</item>
+      <item>foot pound-force/minute</item>
+      <item>foot pound-force/second</item>
+      <item>foot poundal/hour</item>
+      <item>foot poundal/minute</item>
+      <item>foot poundal/second</item>
+      <item>gigawatt</item>
+      <item>gram-force centimeter/hour</item>
+      <item>gram-force centimeter/minute</item>
+      <item>gram-force centimeter/second</item>
+      <item>hectowatt</item>
+      <item>horsepower[international]</item>
+      <item>horsepower[electric]</item>
+      <item>horsepower[metric]</item>
+      <item>horsepower[water]</item>
+      <item>inch ounce-force revolution/minute</item>
+      <item>joule/hour</item>
+      <item>joule/minute</item>
+      <item>joule/second</item>
+      <item>kilcalorie/hour[I.T]</item>
+      <item>kilcalorie/minute[I.T]</item>
+      <item>kilcalorie/second[I.T]</item>
+      <item>kilogram-force meter/hour</item>
+      <item>kilogram-force meter/minute</item>
+      <item>kilogram-force meter/second</item>
+      <item>kilopond meter/hour</item>
+      <item>kilopond meter/minute</item>
+      <item>kilopond meter/second</item>
+      <item>kilowatt</item>
+      <item>megawatt</item>
+      <item>microwatt</item>
+      <item>million Btu/hour[I.T.]</item>
+      <item>milliwatt</item>
+      <item>nanowatt</item>
+      <item>newton meter/hour</item>
+      <item>newton meter/minute</item>
+      <item>newton meter/second</item>
+      <item>petawatt</item>
+      <item>pferdestarke</item>
+      <item>picowatt</item>
+      <item>poncelet</item>
+      <item>pound square foot/cubic second</item>
+      <item>terawatt</item>
+      <item>ton of refrigeration</item>
+      <item>watt</item>
+      <item>yoctowatt</item>
+      <item>yottawatt</item>
+      <item>zeptowatt</item>
+      <item>zettawatt</item>
+      <item>nanowatt</item>
+      <item>nanowatt</item>
+      <item>nanowatt</item>
+      <item>nanowatt</item>
+       
+     </string-array>
+     
+    <string-array name="speedtypes_array">
+        
+      <item>centimeter/second</item>
+      <item>foot/second</item>
+      <item>inch/second</item>
+      <item>kilometer/hour</item>
+      <item>kilometer/second</item>
+      <item>knot</item>
+      <item>mach</item>
+      <item>meter/second</item>
+      <item>mile/hour (mph)</item>
+      <item>mile/second</item>
+      <item>millimeter/second</item>
+      <item>speed of light[vacuum]</item>
+      <item>speed of sound[air]</item>
+      
+     </string-array>
+     
+   <string-array name="densitytypes_array">
+       
+       <item>grain/cubic foot</item>
+       <item>grain/cubic inch</item>
+       <item>grain/gallon [UK]</item>
+       <item>grain/gallon[US]</item>
+       <item>grain/ounce[UK]</item>
+       <item>grain/ounce[US]</item>
+       <item>grain/quart[UK]</item>
+       <item>grain/quart[US]</item>
+       <item>gram/cubic centimeter</item>
+       <item>gram/cubic kilometer</item>
+       <item>gram/cubic meter</item>
+       <item>gram/cubic millimeter</item>
+       <item>gram/kiloliter</item>
+       <item>gram/liter</item>
+       <item>gram/litre</item>
+       <item>gram/microliter</item>
+       <item>gram/milliliter</item>
+       <item>hectogram/cubic centimeter</item>
+       <item>hectogram/cubic kilometer</item>
+       <item>hectogram/cubic meter</item>
+       <item>hectogram/cubic micrometer</item>
+       <item>hectogram/cubic millimeter</item>
+       <item>hectogram/hectoliter</item>
+       <item>hectogram/kiloliter</item>
+       <item>hectogram/liter</item>
+       <item>hectogram/litre</item>
+       <item>hectogram/microliter</item>
+       <item>hectogram/milliliter</item>
+       <item>kilogram/cubic centimeter</item>
+       <item>kilogram/cubic kilometer</item>
+       <item>kilogram/cubic meter</item>
+       <item>kilogram/cubic micrometer</item>
+       <item>kilogram/cubic millimeter</item>
+       <item>kilogram/kiloliter</item>
+       <item>kilogram/liter</item>
+       <item>kilogram/litre</item>
+       <item>kilogram/microliter</item>
+       <item>kilogram/milliliter</item>
+       <item>kiloton/cubic mile[UK]</item>
+       <item>kiloton/cubic mile[US]</item>
+       <item>kiloton/cubic yard[UK]</item>
+       <item>kiloton/cubic yard[US]</item>
+       <item>kilotonne/cubic kilometer</item>
+       <item>kilotonne/cubic meter</item>
+       <item>kilotonne/kiloliter</item>
+       <item>kilotonne/liter</item>
+       <item>kilotonne/litre</item>
+       <item>microgram/cubic centimeter</item>
+       <item>microgram/cubic kilometer</item>
+       <item>microgram/cubic meter</item>
+       <item>microgram/cubic micrometer</item>
+       <item>microgram/cubic millimeter</item>
+       <item>microgram/cubic nanometer</item>
+       <item>microgram/kiloliter</item>
+       <item>microgram/liter</item>
+       <item>microgram/litre</item>
+       <item>microgram/microliter</item>
+       <item>microgram/milliliter</item>
+       <item>milligram/cubic centimeter</item>
+       <item>milligram/cubic killometer</item>
+       <item>milligram/cubic meter</item>
+       <item>milligram/cubic millimeter</item>
+       <item>milligram/kiloliter</item>
+       <item>milligram/liter</item>
+       <item>milligram/litre</item>
+       <item>milligram/microliter</item>
+       <item>milligram/milliliter</item>
+       <item>nanogram/cubic centimeter</item>
+       <item>nanogram/cubic killometer</item>
+       <item>nanogram/cubic meter</item>
+       <item>nanogram/cubic millimeter</item>
+       <item>nanogram/kiloliter</item>
+       <item>nanogram/liter</item>
+       <item>nanogram/litre</item>
+       <item>nanogram/microliter</item>
+       <item>nanogram/milliliter</item>
+       <item>ounce/cubic foot</item>
+       <item>ounce/cubic inch</item>
+       <item>ounce/gallon[UK]</item>
+       <item>ounce/gallon[US]</item>
+       <item>pound/cubic foot</item>
+       <item>pound/cubic inch</item>
+       <item>pound/cubic mile</item>
+       <item>pound/cubic yard</item>
+       <item>pound/gallon[UK]</item>
+       <item>pound/gallon[US]</item>
+       <item>tonne/cubic kilometer</item>
+       <item>tonne/cubic meter</item>
+       <item>tonne/kiloliter</item>
+       <item>tonne/liter</item>
+       <item>tonne/litre</item>
+       <item>water[0°C,solid]</item>
+       <item>water[20°C]</item>
+       <item>water[4°C]</item>
+      
+     </string-array>
+     <string-array name="calculatorsnames_array">
+         <item>Advanced Calculator</item>
+         <item>Measurement Converter</item>
+         <item>Currency Converter</item>
+         <item>Mortgage Calculator</item>
+         <item>Tipping Calculator</item>
+         <item>Graphing Calculator</item>
+     </string-array>
+     <string-array name="nav_drawer_items_titles">
+        <item >Calculator</item>
+        <item >Currency</item>
+        <item >Measurements</item>
+        <item >Tipping</item>
+        <item >Loan Calculator</item>
+        <item >Graphing</item>
+        <item >Themes</item>
+        <item >Settings</item>
+    </string-array>
+    <string-array name="currencies_symbols">
+        <item >؋</item>
+        <item >Lek</item>
+        <item >DA</item>
+        <item >Kz</item>
+        <item >$</item>
+        <item >ARD</item>
+        <item>ƒ</item>
+        <item >$</item>
+        <item >ман</item>
+        <item >$</item>
+        <item >BHD</item>
+        <item >BGT</item>  
+        <item >$</item>
+        <item >p.</item>
+        <item >BZ$</item>
+        <item >BTN</item>
+        <item >$b</item>
+        <item >KM</item>
+        <item >P</item>
+        <item >R$</item>
+        <item >£</item>
+        <item>$</item>
+        <item>лв</item>
+        <item>BRF</item>
+        <item>៛</item>
+        <item>$</item>
+        <item>CVE</item>
+        <item>$</item>  
+        <item>¥</item>
+        <item>$</item>
+        <item>CMF</item>
+        <item>CNF</item>
+        <item>₡</item>
+        <item>kn</item>
+        <item>₱</item>
+        <item>Kč</item>
+        <item>kr</item>
+        <item>DBF</item>
+        <item>RD$</item>
+        <item>£</item>
+        <item>ETB</item>
+        <item>€</item>    
+        <item>$</item>
+        <item>GRL</item>
+        <item>¢</item>
+        <item>£</item>
+        <item>Q</item>
+        <item>GNF</item>
+        <item>$</item>
+        <item>HTG</item>
+        <item>L</item>
+        <item>$</item>
+        <item>Ft</item>
+        <item>kr</item>
+        <item>INR</item>
+        <item>Rp</item>
+        <item>﷼</item>
+        <item>IRD</item>
+        <item>IRP</item>
+        <item>₪</item>
+        <item>J$</item>
+        <item>¥</item>
+        <item>JRD</item>
+        <item>лв</item>
+        <item>KNS</item>
+        <item>KUD</item>
+        <item>лв</item>
+        <item>₭</item>
+        <item>Ls</item>
+        <item>£</item>
+        <item>LSL</item>
+        <item>$</item>
+        <item>LBD</item>
+        <item>Lt</item>  
+        <item>MCP</item>
+        <item>ден</item>
+        <item>MWK</item>
+        <item>RM</item>
+        <item>MLR</item>
+        <item>₨</item>
+        <item>$</item>
+        <item>MDL</item>
+        <item>₮</item>
+        <item>MRD</item>
+        <item>MT</item>
+        <item>$</item>
+        <item>₨</item>
+        <item>NT$</item>
+        <item>$</item>
+        <item>C$</item>
+        <item>₦</item>
+        <item>₩</item>
+        <item>kr</item>
+        <item>﷼</item>
+        <item>₨</item>
+        <item>B/.</item>
+        <item>PNK</item>
+        <item>Gs</item>
+        <item>S/.</item>     
+        <item>₱</item>
+        <item>zł</item>
+        <item>﷼</item>
+        <item>lei</item>
+        <item>руб</item>
+        <item>RNF</item>
+        <item>£</item>
+        <item>SLT</item>
+        <item>SMT</item>
+        <item>﷼</item>
+        <item>Дин.</item>
+        <item>₨</item>
+        <item>SLL</item>
+        <item>$</item>
+        <item>$</item>
+        <item>S</item>
+        <item>R</item> 
+        <item>₩</item>
+        <item>₨</item>
+        <item>SDP</item>
+        <item>$</item>
+        <item>SWL</item>
+        <item>kr</item>
+        <item>CHF</item>
+        <item>£</item>
+        <item>STD</item>
+        <item>TJS</item>
+        <item>TNS</item>
+        <item>฿</item>    
+        <item>TNP</item>
+        <item>TT$</item>
+        <item>TND</item>
+        <item>₤</item>
+        <item>TKM</item>
+        <item>UED</item>
+        <item>UNS</item>
+        <item>₴</item>
+        <item>$</item>
+        <item>$U</item>
+        <item>лв</item>
+        <item>VNV</item>
+        <item>Bs</item>
+        <item>₫</item>
+        <item>﷼</item>
+        <item>ZBK</item>
+        <item>Z$</item>      
+    </string-array>
+</resources>

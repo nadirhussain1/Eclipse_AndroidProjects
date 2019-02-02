@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="months_names">
+        <item>JANEIRO</item>
+        <item>FEVEREIRO</item>
+        <item>MARCO</item>
+        <item>ABRIL</item>
+        <item>MAIO</item>
+        <item>JUNHO</item>
+        <item>JULHO</item>
+        <item>AGOSTO</item>
+        <item>SEPTEMBRO</item>
+        <item>OUTUBRO</item>
+        <item>NOVEMBRO</item>
+        <item>DEZEMBRO</item>
+    </string-array>
+    <string-array name="short_months_names">
+        <item>JAN</item>
+        <item>FEV</item>
+        <item>MAR</item>
+        <item>ABR</item>
+        <item>MAI</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AGOS</item>
+        <item>SEPT</item>
+        <item>OUTU</item>
+        <item>NOV</item>
+        <item>DEZ</item>
+    </string-array>
+    <string-array name="days_names">
+        <item>Domingo </item>
+        <item>Segunda-feira</item>
+        <item>Terça-feira</item>
+        <item>Quarta-feira</item>
+        <item>Quinta-feira </item>
+        <item>Sexta-feira</item>
+        <item>Sábado</item>    
+    </string-array>
+
+</resources>

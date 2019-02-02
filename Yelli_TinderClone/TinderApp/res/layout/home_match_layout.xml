@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="917px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_border"
+        android:tag="constantPad" >
+
+        <ImageView
+            android:id="@+id/matchedUserPic"
+            android:layout_width="match_parent"
+            android:layout_height="950px" />
+
+      
+
+        <RelativeLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="290px"
+            android:layout_below="@+id/matchedUserPic"
+            android:layout_marginTop="-20px"
+            android:background="@color/blue_header_color"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:id="@+id/nameAgeLayout"
+                android:layout_width="870px"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amina,"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/ageTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/nameTextView"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="24dp" />
+                
+                 <TextView
+                	android:id="@+id/addressTextView"
+                	android:layout_width="wrap_content"
+               	 	android:layout_height="wrap_content"
+                	android:layout_toRightOf="@+id/ageTextView"
+                	android:text=""
+                	android:textColor="#FFFFFF"
+                	android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/totalPhotosTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="02"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/cameraIcon"
+                    android:layout_width="48px"
+                    android:layout_height="45px"
+                    android:layout_marginRight="40px"
+                    android:layout_toLeftOf="@+id/totalPhotosTextView"
+                    android:background="@drawable/camera_icon" />
+            </RelativeLayout>
+
+           
+
+            <RelativeLayout
+                android:id="@+id/eduFriendsLayout"
+                android:layout_width="870px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameAgeLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20px" >
+
+                <TextView
+                    android:id="@+id/educationTextView"
+                    android:layout_width="630px"
+                    android:layout_height="wrap_content"
+                    android:text="Student at Florida university"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/totalMutualFriendsTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="02"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/mutualFriendsIcon"
+                    android:layout_width="67px"
+                    android:layout_height="48px"
+                    android:layout_marginRight="40px"
+                    android:layout_toLeftOf="@+id/totalMutualFriendsTextView"
+                    android:background="@drawable/friends_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/workLayout"
+                android:layout_width="870px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eduFriendsLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20px" >
+
+                <TextView
+                    android:id="@+id/workTextView"
+                    android:layout_width="630px"
+                    android:layout_height="wrap_content"
+                    android:text="Work at Mount Sinai Hospital"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+                
+                    <TextView
+                    android:id="@+id/totalMutualLikesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="02"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/mutualLikesIcon"
+                    android:layout_width="50px"
+                    android:layout_height="45px"
+                    android:layout_marginRight="40px"
+                    android:layout_toLeftOf="@+id/totalMutualLikesTextView"
+                    android:background="@drawable/fb_thumbs_up_50" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

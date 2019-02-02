@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/item1s"
+        android:icon="@drawable/ic_menu_moreoverflow_normal_holo_dark"
+        android:orderInCategory="10"
+        android:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/myProfile"
+                android:title="My Profile"/>
+            <item
+                android:id="@+id/whats_drink"
+                android:title="What Is A Drink ?"/>
+            <item
+                android:id="@+id/rateApp"
+                android:title="Rate App"/>
+            <item
+                android:id="@+id/moreFreeApps"
+                android:title="Free Apps"/>
+        </menu>
+    </item>
+
+</menu>

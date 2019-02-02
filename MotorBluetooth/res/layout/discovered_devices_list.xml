@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="700px"
+        android:layout_height="600px"
+        android:layout_centerInParent="true"
+        android:background="#000000" >
+
+        <TextView
+            android:id="@+id/title_paired_devices"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff666666"
+            android:text="@string/title_paired_devices"
+            android:textSize="25dp"
+            android:paddingLeft="10px"
+            android:textColor="#ffffffff" />
+
+        <ListView
+            android:id="@+id/paired_devices_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="480px"
+            android:layout_below="@+id/title_paired_devices" 
+            android:dividerHeight="5px"
+            android:divider="#00FF00"
+            />
+
+        <ProgressBar
+            android:id="@+id/scanBar"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title_paired_devices"
+            android:visibility="gone"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px" />
+
+        <Button
+            android:id="@+id/button_scan"
+            android:layout_width="400px"
+            android:layout_height="95px"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/button_scan" />
+    </RelativeLayout>
+
+</RelativeLayout>

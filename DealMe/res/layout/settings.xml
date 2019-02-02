@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/accountSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="My Account"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+    
+    <ImageView
+        android:id="@+id/separatorImage"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/accountSetting"
+        android:background="#B5B5B5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+ 
+ <TextView
+     android:id="@+id/dealsSetting"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/separatorImage"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="10dp"
+     android:text="My Deals"
+     android:textAppearance="?android:attr/textAppearanceMedium" 
+     android:textStyle="bold"/>
+ 
+ <ImageView
+        android:id="@+id/separatorImage1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dealsSetting"
+        android:background="#B5B5B5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+ <TextView
+        android:id="@+id/alertsSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Alerts" 
+        android:layout_below="@+id/separatorImage1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"/>
+ 
+ <ImageView
+        android:id="@+id/separatorImage2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/alertsSetting"
+        android:background="#B5B5B5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+ 
+ <TextView
+        android:id="@+id/linkToFb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link to facebook" 
+        android:layout_below="@+id/separatorImage2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        />
+ <TextView
+        android:id="@+id/loginAsfb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are loggedin as" 
+        android:layout_below="@+id/linkToFb"
+        
+        android:textSize="12dp"
+        android:layout_marginLeft="10dp"/>
+ 
+ 
+ <ImageView
+        android:id="@+id/separatorImage3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/loginAsfb"
+        android:background="#B5B5B5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+ 
+ <TextView
+        android:id="@+id/linkToTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link to Twitter" 
+        android:layout_below="@+id/separatorImage3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"/>
+ 
+ <TextView
+        android:id="@+id/loginAstwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are loggedin as" 
+        android:layout_below="@+id/linkToTwitter"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"/>
+ 
+ <ImageView
+        android:id="@+id/separatorImage4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/loginAstwitter"
+        android:background="#B5B5B5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+ <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About" 
+        android:layout_below="@+id/separatorImage4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"/>
+ 
+ <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Running Version" 
+        android:layout_below="@+id/about"
+        android:layout_marginLeft="10dp"
+        android:textSize="12dp"/>
+ 
+ <ImageView
+        android:id="@+id/separatorImage5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/version"
+        android:background="#B5B5B5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+</RelativeLayout>

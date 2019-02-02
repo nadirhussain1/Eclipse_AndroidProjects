@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA000000" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="650px"
+        android:layout_height="1050px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65px" >
+
+        <TextView
+            android:id="@+id/DialogHeading"
+            android:layout_width="match_parent"
+            android:layout_height="72px"
+            android:background="@drawable/popup_title"
+            android:gravity="center"
+            android:text="SELECT DEFAULT CURRENCY"
+            android:textColor="#5B5B5B"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
+            android:layout_marginTop="72px"
+            android:background="@drawable/popup_bg" >
+
+            <ListView
+                android:id="@+id/currListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:divider="@null"
+                android:scrollbars="none" >
+            </ListView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="403px"
+            android:layout_height="116px"
+            android:layout_below="@+id/contentLayout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15px"
+            android:background="@drawable/done" />
+    </RelativeLayout>
+
+</RelativeLayout>

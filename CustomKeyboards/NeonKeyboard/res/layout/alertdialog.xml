@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/secondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="20dp"
+        android:text="* Check keyboard on the next screen (turn on)"
+        android:textColor="#FFFFFF"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/thirdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/secondText"
+        android:layout_below="@+id/secondText"
+        android:layout_marginTop="20dp"
+        android:text="* We do not store any info"
+        android:textColor="#FFFFFF"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/fourthText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/secondText"
+        android:layout_below="@+id/thirdText"
+        android:layout_marginTop="20dp"
+        android:text="* Press Back button to return for Step 2 "
+        android:textColor="#FFFFFF"
+        android:textSize="13dp" />
+
+</RelativeLayout>

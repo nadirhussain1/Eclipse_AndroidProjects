@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50px"
+            android:gravity="center"
+            android:text="@string/login_pageone_text"
+            android:textColor="#69C0E4"
+            android:textSize="18dp" />
+
+       <ImageView
+            android:id="@+id/pageContent"
+            android:layout_width="975px"
+            android:layout_height="1138px"
+            android:layout_below="@+id/headerTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:background="@drawable/login_first_content" />
+
+        <RelativeLayout
+            android:id="@+id/dotsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pageContent"
+            android:layout_marginTop="20px"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/dotOneImage"
+                android:layout_width="45px"
+                android:layout_height="44px"
+                android:background="@drawable/filled_dot" />
+
+            <ImageView
+                android:id="@+id/dotTwoImage"
+                android:layout_width="45px"
+                android:layout_height="44px"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/dotOneImage"
+                android:background="@drawable/empty_dot" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="custom_style">
+        <item name="android:keyBackground">@drawable/theme</item>
+        <item name="android:keyTextColor">#FFFFFF</item>
+        <item name="android:background">@color/purple</item>
+    </style>
+
+</resources>

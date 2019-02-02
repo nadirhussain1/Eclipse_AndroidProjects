@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/inputDisplayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="178px"
+            android:background="#262626" >
+
+            <TextView
+                android:id="@+id/YEquationTextView"
+                android:layout_width="100px"
+                android:layout_height="match_parent"
+                android:background="#1D1D1D"
+                android:gravity="center"
+                android:text="Y="
+                android:textColor="#757575"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.calculations.brain.CalcEditText
+                android:id="@+id/DisplayInputExpArea"
+                android:layout_width="470px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="100px"
+                android:background="#262626"
+                android:paddingLeft="15dp"
+                android:text=""
+                android:textColor="#51BEEC"
+                android:textSize="40dp" />
+
+            <RelativeLayout
+                android:id="@+id/GoDrawButtonLayout"
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#1D1D1D" >
+
+                <Button
+                    android:id="@+id/GoButton"
+                    android:layout_width="48px"
+                    android:layout_height="48px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/graphing_button_send"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="#757575"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/graphViewWrapperLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="178px" />
+
+        <RelativeLayout
+            android:id="@+id/simpleButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="860px"
+            android:layout_marginTop="178px" >
+
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="360px"
+                android:layout_height="98px"
+                android:background="@drawable/light_button_clear" />
+
+            <Button
+                android:id="@+id/backspaceButton"
+                android:layout_width="360px"
+                android:layout_height="98px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/light_button_backspace" />
+
+            <LinearLayout
+                android:id="@+id/AdvancedRowOneFunctions"
+                android:layout_width="match_parent"
+                android:layout_height="87px"
+                android:layout_marginTop="98px"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ASinFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_asin" />
+
+                <Button
+                    android:id="@+id/ACosFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_acos" />
+
+                <Button
+                    android:id="@+id/ATangentFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_atan" />
+
+                <Button
+                    android:id="@+id/FactorialButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_factorial" />
+
+                <Button
+                    android:id="@+id/ExpFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_exp" />
+
+                <Button
+                    android:id="@+id/ModFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_mod" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AdvancedRowTwoFunctions"
+                android:layout_width="match_parent"
+                android:layout_height="87px"
+                android:layout_alignTop="@+id/AdvancedRowOneFunctions"
+                android:layout_marginTop="87px"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/PiFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_pi" />
+
+                <Button
+                    android:id="@+id/OnePowerFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_inverse" />
+
+                <Button
+                    android:id="@+id/TenPowerFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_tenpow" />
+
+                <Button
+                    android:id="@+id/EulerButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_eul" />
+
+                <Button
+                    android:id="@+id/LeftParenthesisButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_left_paren" />
+
+                <Button
+                    android:id="@+id/RightParenthesisButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_right_paren" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AdvancedRowThreeFunctions"
+                android:layout_width="match_parent"
+                android:layout_height="87px"
+                android:layout_alignTop="@+id/AdvancedRowTwoFunctions"
+                android:layout_marginTop="87px"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/SinFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_sin" />
+
+                <Button
+                    android:id="@+id/CosFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_cos" />
+
+                <Button
+                    android:id="@+id/TangentFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_tan" />
+
+                <Button
+                    android:id="@+id/NaturalLogFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_ln" />
+
+                <Button
+                    android:id="@+id/PlusMinusFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_addsub" />
+
+                <Button
+                    android:id="@+id/CarRotFunctionButton"
+                    android:layout_width="120px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_adv_carrot" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/firstRow"
+                android:layout_width="match_parent"
+                android:layout_height="125px"
+                android:layout_alignTop="@+id/AdvancedRowThreeFunctions"
+                android:layout_marginTop="87px" >
+
+                <Button
+                    android:id="@+id/digitSevenButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_7" />
+
+                <Button
+                    android:id="@+id/digitEightButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitSevenButton"
+                    android:background="@drawable/light_button_8" />
+
+                <Button
+                    android:id="@+id/digitNineButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitEightButton"
+                    android:background="@drawable/light_button_9" />
+
+                <Button
+                    android:id="@+id/xButtonButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitNineButton"
+                    android:background="@drawable/xbutton" />
+
+                <Button
+                    android:id="@+id/sqrtButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/xButtonButton"
+                    android:background="@drawable/light_button_sqrt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/secondRow"
+                android:layout_width="match_parent"
+                android:layout_height="125px"
+                android:layout_below="@+id/firstRow" >
+
+                <Button
+                    android:id="@+id/digitFourButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_4" />
+
+                <Button
+                    android:id="@+id/digitFiveButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitFourButton"
+                    android:background="@drawable/light_button_5" />
+
+                <Button
+                    android:id="@+id/digitSixButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitFiveButton"
+                    android:background="@drawable/light_button_6" />
+
+                <Button
+                    android:id="@+id/addButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitSixButton"
+                    android:background="@drawable/light_button_add" />
+
+                <Button
+                    android:id="@+id/subtractButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/addButton"
+                    android:background="@drawable/light_button_subtract" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/thirdRow"
+                android:layout_width="match_parent"
+                android:layout_height="125px"
+                android:layout_below="@+id/secondRow" >
+
+                <Button
+                    android:id="@+id/digitOneButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_1" />
+
+                <Button
+                    android:id="@+id/digitTwoButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitOneButton"
+                    android:background="@drawable/light_button_2" />
+
+                <Button
+                    android:id="@+id/digitThreeButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitTwoButton"
+                    android:background="@drawable/light_button_3" />
+
+                <Button
+                    android:id="@+id/multiplyButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitThreeButton"
+                    android:background="@drawable/light_button_multiply" />
+
+                <Button
+                    android:id="@+id/divideButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/multiplyButton"
+                    android:background="@drawable/light_button_divide" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fourthRow"
+                android:layout_width="match_parent"
+                android:layout_height="125px"
+                android:layout_below="@+id/thirdRow" >
+
+                <Button
+                    android:id="@+id/digitDoubleZeroButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/light_button_00" />
+
+                <Button
+                    android:id="@+id/digitZeroButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitDoubleZeroButton"
+                    android:background="@drawable/light_button_0" />
+
+                <Button
+                    android:id="@+id/digitDecimalButton"
+                    android:layout_width="144px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitZeroButton"
+                    android:background="@drawable/light_button_decimal" />
+
+                <Button
+                    android:id="@+id/equalsButton"
+                    android:layout_width="336px"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/digitDecimalButton"
+                    android:background="@drawable/light_adv_equals" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

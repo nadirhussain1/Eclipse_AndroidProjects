@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2843" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/mainHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120px" >
+
+            <View
+                android:id="@+id/backClickArea"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px" />
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="19px"
+                android:layout_height="33px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/back_arrow_white" />
+
+            <TextView
+                android:id="@+id/sellEventsLableTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/sell_event_label"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addSellEventButton"
+            android:layout_width="match_parent"
+            android:layout_height="147px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="120px"
+            android:background="@drawable/sell_events_bg_selector"
+            android:gravity="center"
+            android:text="@string/add_sell_event_label"
+            android:textColor="#014C3E"
+            android:textSize="19dp" />
+
+        <ListView
+            android:id="@+id/soldEventsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/addSellEventButton"
+            android:layout_marginTop="159px"
+            android:divider="#88000000"
+            android:dividerHeight="1px"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/actionbar_background"
+    android:layout_gravity="fill_horizontal" >
+
+    <ImageView
+        android:id="@+id/btn_prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-10dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/arrow_left" />
+
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow_right" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_prev"
+        android:layout_toLeftOf="@+id/btn_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" >
+    </ExpandableListView>
+
+</RelativeLayout>

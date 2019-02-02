@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="nav_drawer_normal_color">#ECECEC</color>
+    <color name="nav_drawer_press_color">#000000</color>
+    <color name="ab_back_color">#069DDD</color>
+    <color name="blueselectionhighlight">#27A0CD</color>
+    <color name="blackbackground">#000000</color>
+
+</resources>

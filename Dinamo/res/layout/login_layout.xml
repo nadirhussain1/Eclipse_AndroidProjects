@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2843" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/LoginLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="44px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160px"
+            android:gravity="center_vertical"
+            android:text="@string/log_in_screen_label"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/logInIdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="85px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="364px"
+            android:background="@drawable/input_white_bg" >
+
+            <TextView
+                android:id="@+id/cpfTextView"
+                android:layout_width="100px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25px"
+                android:gravity="center"
+                android:text="CPF"
+                android:textColor="#1d2843"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/cpfArrowImageView"
+                android:layout_width="27px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25px"
+                android:layout_toRightOf="@+id/cpfTextView"
+                android:src="@drawable/dropdown_arrow" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/cpfArrowImageView"
+                android:background="#000000"
+                android:tag="constantWidth" />
+
+            <EditText
+                android:id="@+id/LogInIdEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/separator"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:hint="@string/sign_up_cpf_label"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:paddingLeft="30px"
+                android:textColor="#6199c9"
+                android:textColorHint="#6199c9"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/logInPinCodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="85px"
+            android:layout_below="@+id/logInIdLayout"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/input_white_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/log_in_pincode_label"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:paddingLeft="25px"
+            android:singleLine="true"
+            android:textColor="#6199c9"
+            android:textColorHint="#6199c9"
+            android:inputType="textPassword"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/logInEnterButton"
+            android:layout_width="match_parent"
+            android:layout_height="153px"
+            android:layout_below="@+id/logInPinCodeEditText"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/dark_blue_button_selector"
+            android:gravity="center"
+            android:text="@string/log_in_enter_label"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/forgotPassLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logInEnterButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:text="@string/log_in_forget_password_label"
+            android:textColor="#6199c9"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/NoAccountButton"
+            android:layout_width="660px"
+            android:layout_height="88px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="977px"
+            android:background="@drawable/blue_border_transp_center_bg"
+            android:gravity="center"
+            android:text="@string/log_in_no_account_label"
+            android:textColor="#6199c9"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

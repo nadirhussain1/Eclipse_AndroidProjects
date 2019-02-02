@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2843" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/mainHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120px" >
+
+            <View
+                android:id="@+id/backClickArea"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px" />
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="19px"
+                android:layout_height="33px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/back_arrow_white" />
+
+            <TextView
+                android:id="@+id/reportsHeadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/reports_button_label"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/durationTypesLabelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="120px"
+            android:background="#111A2F" >
+
+            <TextView
+                android:id="@+id/DayLabelArea"
+                android:layout_width="180px"
+                android:layout_height="80px"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:text="@string/periodicity_dia_label"
+                android:textColor="#6199c9"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/WeekLabelArea"
+                android:layout_width="180px"
+                android:layout_height="80px"
+                android:layout_marginLeft="180px"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:text="@string/periodicity_semana_label"
+                android:textColor="#6199c9"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/monthLabelArea"
+                android:layout_width="180px"
+                android:layout_height="80px"
+                android:layout_alignLeft="@+id/WeekLabelArea"
+                android:layout_marginLeft="180px"
+                android:layout_marginTop="20px"
+                android:background="#1D2843"
+                android:gravity="center"
+                android:text="@string/periodicity_mes_label"
+                android:textColor="#6199c9"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/yearLabelArea"
+                android:layout_width="180px"
+                android:layout_height="80px"
+                android:layout_alignLeft="@+id/monthLabelArea"
+                android:layout_marginLeft="180px"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:text="@string/periodicity_ano_label"
+                android:textColor="#6199c9"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/durationTypesValuesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_alignTop="@+id/durationTypesLabelLayout"
+            android:layout_marginTop="100px" >
+
+            <View
+                android:id="@+id/leftArrowClickedArea"
+                android:layout_width="120px"
+                android:layout_height="120px" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="33px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/blue_arrow_left" />
+
+            <View
+                android:id="@+id/rightArrowClickedArea"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_alignParentRight="true" />
+
+            <ImageView
+                android:layout_width="19px"
+                android:layout_height="33px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/blue_arrow_right" />
+
+            <TextView
+                android:id="@+id/PeriodValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="janeiro / 2014"
+                android:textColor="#6199c9"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/soldEventsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignTop="@+id/durationTypesValuesLayout"
+            android:layout_marginTop="100px"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/soldEventsPriceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40px"
+                android:gravity="center_vertical"
+                android:text="VENDAS (R$)"
+                android:textColor="#111A2F"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/greenArrow"
+                android:layout_width="17px"
+                android:layout_height="29px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/arrow_right_green" />
+
+            <TextView
+                android:id="@+id/soldEventsAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35px"
+                android:layout_toLeftOf="@+id/greenArrow"
+                android:text="1.200,00"
+                android:textColor="#1BA58D"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignTop="@+id/soldEventsLayout"
+            android:layout_marginTop="100px"
+            android:background="#88000000"
+            android:tag="constantHeight" />
+
+        <RelativeLayout
+            android:id="@+id/boughtEventsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/separator"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/boughtEventsPriceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40px"
+                android:gravity="center_vertical"
+                android:text="COMPRAS (R$)"
+                android:textColor="#111A2F"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/redArrow"
+                android:layout_width="17px"
+                android:layout_height="29px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/arrow_right_red" />
+
+            <TextView
+                android:id="@+id/BoughtEventsAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35px"
+                android:layout_toLeftOf="@+id/redArrow"
+                android:text="-300,00"
+                android:textColor="#F35B5D"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/surplusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:layout_alignTop="@+id/boughtEventsLayout"
+            android:layout_marginTop="110px"
+            android:background="#1BA58D" >
+
+            <TextView
+                android:id="@+id/surplusTextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40px"
+                android:gravity="center"
+                android:text="@string/surplus_text_title"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/surplusAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40px"
+                android:gravity="center_vertical"
+                android:text="R$ 900,00"
+                android:textColor="#FFFFFF"
+                android:textSize="36dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/expensesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/surplusLayout"
+            android:layout_marginTop="120px"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/expensesTextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40px"
+                android:gravity="center_vertical"
+                android:text="RATEIO DE DESPESAS (R$)"
+                android:textColor="#111A2F"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/redArrow"
+                android:layout_width="17px"
+                android:layout_height="29px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/arrow_right_red" />
+
+            <TextView
+                android:id="@+id/expenseAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35px"
+                android:layout_toLeftOf="@+id/redArrow"
+                android:text="-1.100,00"
+                android:textColor="#F35B5D"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/finalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:layout_alignTop="@+id/expensesLayout"
+            android:layout_marginTop="110px"
+            android:background="#F04C4E" >
+
+            <TextView
+                android:id="@+id/finalAmountStaticTextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40px"
+                android:gravity="center_vertical"
+                android:text="SOBRA"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/finalAmountValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40px"
+                android:gravity="center_vertical"
+                android:text="R$ 900,00"
+                android:textColor="#FFFFFF"
+                android:textSize="36dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

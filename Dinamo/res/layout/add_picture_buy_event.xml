@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2843" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/addPhotoHeadlabel"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:gravity="center"
+            android:text="@string/add_photo_screen_label"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/centralRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="690px"
+            android:layout_marginTop="120px"
+            android:background="#1d2843"
+            android:paddingTop="30px" >
+
+            <ImageView
+                android:id="@+id/buyEventImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/picture_placeholder" />
+
+            <ImageView
+                android:id="@+id/flashIcon"
+                android:layout_width="28px"
+                android:layout_height="39px"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/flash"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/flashOnLabelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/flashIcon"
+                android:text="ON"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/switchCameraIcon"
+                android:layout_width="55px"
+                android:layout_height="49px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:background="@drawable/switchcamera"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/skipPhotoStepButton"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="1005px"
+            android:background="@drawable/blue_border_transp_center_bg"
+            android:gravity="center"
+            android:text="@string/skip_photo_button_label"
+            android:textColor="#6199c9"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/takePhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="127px"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="25px"
+            android:layout_marginTop="843px"
+            android:background="@drawable/take_photo_bg_selector"
+            android:paddingLeft="60px"
+            android:text="@string/take_photo_button_label"
+            android:textColor="#60000E"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

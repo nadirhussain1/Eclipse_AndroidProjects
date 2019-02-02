@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:gravity="center" >
+
+    <ProgressBar
+        android:id="@android:id/progress"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+      
+        android:layout_marginLeft="5dp" >
+    </ProgressBar>
+<!--   android:background="@android:color/darker_gray" -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_margin="12sp"
+        android:layout_gravity="center"
+        android:text="@string/pleasewaitmessage"
+        android:textColor="@color/list_text_color"
+        android:textStyle="bold" />
+
+</LinearLayout>

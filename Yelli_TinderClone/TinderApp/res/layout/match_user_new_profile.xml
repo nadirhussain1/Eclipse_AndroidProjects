@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/appBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/flower_bg"
+            android:layout_width="616px"
+            android:layout_height="976px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/flow_bg" />
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/blue_header_color" >
+
+            <View
+                android:id="@+id/appHeaderLogo"
+                android:layout_width="254px"
+                android:layout_height="71px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/yelli_header_logo" />
+
+            <TextView
+                android:id="@+id/doneTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50px"
+                android:text="Done"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/likeButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:background="@drawable/like_icon" />
+
+            <Button
+                android:id="@+id/dislikebutton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_toLeftOf="@+id/likeButton"
+                android:background="@drawable/dislike_icon" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:layout_marginTop="-20px" >
+
+            <RelativeLayout
+                android:id="@+id/scrollChildLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.appdupe.flamerapp.utility.ExtendedGallery
+                    android:id="@+id/imageExtendedGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="1050px"
+                    android:layout_centerHorizontal="true"
+                    android:fadingEdge="none"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/image_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageExtendedGallery"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30px"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nameAgeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:layout_below="@+id/image_count"
+                    android:layout_marginTop="30px"
+                    android:background="@color/blue_header_color" >
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="10px"
+                        android:text="Amina,"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/ageTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10px"
+                        android:layout_toRightOf="@+id/nameTextView"
+                        android:text=" 22"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/educationTextView"
+                        android:layout_width="630px"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/nameTextView"
+                        android:layout_below="@+id/nameTextView"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/workTextView"
+                        android:layout_width="630px"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/educationTextView"
+                        android:layout_below="@+id/educationTextView"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/photosFriendsLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50px" >
+
+                        <ImageView
+                            android:id="@+id/cameraIcon"
+                            android:layout_width="48px"
+                            android:layout_height="45px"
+                            android:background="@drawable/camera_icon" />
+
+                        <TextView
+                            android:id="@+id/totalPhotosTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_toRightOf="@+id/cameraIcon"
+                            android:text="02"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/mutualFriendsIcon"
+                            android:layout_width="67px"
+                            android:layout_height="48px"
+                            android:layout_below="@+id/cameraIcon"
+                            android:layout_marginTop="30px"
+                            android:background="@drawable/friends_icon" />
+
+                        <TextView
+                            android:id="@+id/totalMutualFriendsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/totalPhotosTextView"
+                            android:layout_alignTop="@+id/mutualFriendsIcon"
+                            android:text="02"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/descriptionLayout"
+                    android:layout_width="980px"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameAgeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px" >
+
+                    <TextView
+                        android:id="@+id/distanceTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 Miles away"
+                        android:textColor="@color/blue_header_color"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/activityTimeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/distanceTextView"
+                        android:layout_marginTop="10px"
+                        android:text="active 13 minutes ago"
+                        android:textColor="@color/blue_header_color"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/aboutNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activityTimeTextView"
+                        android:layout_marginTop="30px"
+                        android:text="About Amina"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/perDescriptionTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/aboutNameTextView"
+                        android:layout_marginTop="10px"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <com.appdupe.flamerapp.utility.ExtendedGallery
+                    android:id="@+id/friendsGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descriptionLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:fadingEdge="none"
+                    android:scaleType="fitXY" />
+
+                <com.appdupe.flamerapp.utility.ExtendedGallery
+                    android:id="@+id/likesGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/friendsGallery"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50px"
+                    android:fadingEdge="none"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

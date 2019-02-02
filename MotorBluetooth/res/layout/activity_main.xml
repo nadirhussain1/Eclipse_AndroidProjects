@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <it.sephiroth.android.library.imagezoom.ImageViewTouch
+            android:id="@+id/backImageTouch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/ConnectStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="30px"
+            android:text="Click Button A Up"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/PresetAButton"
+            android:layout_width="300px"
+            android:layout_height="62px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/preset_a" />
+
+        <Button
+            android:id="@+id/PresetBButton"
+            android:layout_width="300px"
+            android:layout_height="62px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="300px"
+            android:background="@drawable/preset_b" />
+
+        <Button
+            android:id="@+id/cloakButton"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="92px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/cloak_switch" />
+
+        <Button
+            android:id="@+id/backgroundToggle"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_above="@+id/cloakButton"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/bgtoggle_switch" />
+
+        <Button
+            android:id="@+id/powerOnOfButton"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginRight="20px"
+            android:background="@drawable/onoff_switch" />
+
+        <ImageView
+            android:id="@+id/machineABLogo"
+            android:layout_width="108px"
+            android:layout_height="38px"
+            android:layout_above="@+id/powerOnOfButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginRight="15px"
+            android:background="@drawable/machine_ab" />
+
+        <RelativeLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="342px"
+            android:layout_height="108px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40px"
+            android:background="@drawable/machine_speed_info" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/speedControlLayout"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/infoLayout"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="40px" >
+
+            <Button
+                android:id="@+id/machineAUpButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:background="@drawable/up_button_switch" />
+
+            <ImageView
+                android:id="@+id/machineALogo"
+                android:layout_width="108px"
+                android:layout_height="38px"
+                android:layout_below="@+id/machineAUpButton"
+                android:layout_marginTop="10px"
+                android:background="@drawable/machine_a" />
+
+            <Button
+                android:id="@+id/machineADownButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_below="@+id/machineALogo"
+                android:layout_marginTop="10px"
+                android:background="@drawable/down_button_switch" />
+
+            <Button
+                android:id="@+id/machineBUpButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/up_button_switch" />
+
+            <ImageView
+                android:id="@+id/machineBLogo"
+                android:layout_width="108px"
+                android:layout_height="38px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/machineBUpButton"
+                android:layout_marginTop="10px"
+                android:background="@drawable/machine_b" />
+
+            <Button
+                android:id="@+id/machineBDownButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/machineBLogo"
+                android:layout_marginTop="10px"
+                android:background="@drawable/down_button_switch" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

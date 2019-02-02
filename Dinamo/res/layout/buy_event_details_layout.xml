@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2843" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/mainHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="120px" >
+
+            <View
+                android:id="@+id/backClickArea"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20px" />
+
+            <ImageView
+                android:id="@+id/backIcon"
+                android:layout_width="19px"
+                android:layout_height="33px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:background="@drawable/back_arrow_white" />
+
+            <TextView
+                android:id="@+id/buyEventDetailsLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/buy_event_details_label"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/editIcon"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/edit_button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/purchaseValueLayout"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:layout_marginTop="120px"
+            android:background="#111A2F" >
+
+            <TextView
+                android:id="@+id/ValorStaticTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="VALOR:"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/ValorValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:text="R$ 300,00"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/visualizePhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="81px"
+            android:layout_alignTop="@+id/purchaseValueLayout"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="240px"
+            android:background="@drawable/viewphoto_button"
+            android:gravity="center_vertical"
+            android:paddingLeft="150px"
+            android:text="@string/visualize_photo_button_label"
+            android:textColor="#6199c9"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/centralWhiteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/visualizePhotoButton"
+            android:layout_marginTop="140px"
+            android:background="#FFFFFF" >
+
+            <RelativeLayout
+                android:id="@+id/paymentDayLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="20px" >
+
+                <TextView
+                    android:id="@+id/payDayStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/payment_date_single_label"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/paymentDayValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="09/02/2014"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/paymentMethodLayout"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_alignTop="@+id/paymentDayLayout"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="90px" >
+
+                <TextView
+                    android:id="@+id/payMethodStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/payment_method_label"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/paymentMethodValueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Dinheiro"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/establishmentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_alignTop="@+id/paymentMethodLayout"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="110px" >
+
+                <TextView
+                    android:id="@+id/establishStaticTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/establishment_name_label"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+
+                <TextView
+                    android:id="@+id/establishNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="Nome"
+                    android:textColor="#111A2F"
+                    android:textSize="19dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignTop="@+id/establishmentLayout"
+                android:layout_marginTop="120px"
+                android:background="#88000000"
+                android:tag="constantHeight" />
+
+            <ScrollView
+                android:id="@+id/notesScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/separator"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px" >
+
+                <TextView
+                    android:id="@+id/notesTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is test string. This area will be scrollable in case of large string of notes.So you dont need to worry about space.This is test string and I will replace it with real data once we integrate API&apos;s "
+                    android:textColor="#666666"
+                    android:textSize="18dp" />
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calculator="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_history"
+        android:icon="@drawable/ab_history"
+        calculator:showAsAction="always"/>
+    <item
+        android:id="@+id/action_copy"
+        android:icon="@drawable/ab_copy"
+        calculator:showAsAction="always"/>
+    <item
+        android:id="@+id/action_switch"
+        android:icon="@drawable/ab_advanced"
+        calculator:showAsAction="always"/>
+    <item
+        android:id="@+id/action_currency"
+        android:icon="@drawable/ab_currency"
+        calculator:showAsAction="always"/>
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ab_refresh"
+        calculator:showAsAction="always"/>
+    <item
+        android:id="@+id/action_measure"
+        android:icon="@drawable/ab_refresh"
+        calculator:showAsAction="always"/>
+     <item
+        android:id="@+id/action_tip"
+        android:icon="@drawable/ab_refresh"
+        calculator:showAsAction="always"/>
+
+</menu>

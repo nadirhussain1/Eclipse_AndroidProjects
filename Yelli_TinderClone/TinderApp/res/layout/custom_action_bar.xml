@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/scalingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="227px"
+        android:background="@color/blue_header_color" >
+
+        <Button
+            android:id="@+id/action_home"
+            android:layout_width="84px"
+            android:layout_height="65px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/menu_drawer_icon" />
+
+        <View
+            android:id="@+id/appHeaderLogo"
+            android:layout_width="254px"
+            android:layout_height="71px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/yelli_header_logo" />
+
+        <Button
+            android:id="@+id/action_rightmenu"
+            android:layout_width="111px"
+            android:layout_height="101px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:background="@drawable/chat_matches_icon"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/action_editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:visibility="gone"
+            android:text="Edit"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
